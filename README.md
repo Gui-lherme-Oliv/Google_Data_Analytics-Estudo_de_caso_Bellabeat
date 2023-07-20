@@ -33,7 +33,7 @@ A Urška sabe que uma análise dos dados de consumo disponíveis da Bellabeat re
 ### 🛠 [Processamento](#3-processamento)
 ### 📊 [Análise](#4-análise)
 ### 📋 [Compartilhamento](#5-compartilhamento)
-### 🧗‍♀️ [Ação](#6-ação)
+### 🧗 [Ação](#6-ação)
 
 ## 1. Pergunta
 
