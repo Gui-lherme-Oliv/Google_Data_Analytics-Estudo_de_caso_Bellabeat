@@ -28,7 +28,7 @@ A Urška sabe que uma análise dos dados de consumo disponíveis da Bellabeat re
 
 ## Etapas do processo de análise de dados
 
-### ❓ [Pergunta](#1-pergunta)
+### ❔ [Pergunta](#1-pergunta)
 ### 💻 [Preparação](#2-preparação)
 ### 🛠 [Processamento](#3-processamento)
 ### 📊 [Análise](#4-análise)
