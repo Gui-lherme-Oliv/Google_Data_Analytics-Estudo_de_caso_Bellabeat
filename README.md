@@ -26,3 +26,16 @@ Em 2016, a Bellabeat abriu escritórios ao redor do mundo e lançou vários prod
 
 A Urška sabe que uma análise dos dados de consumo disponíveis da Bellabeat revelaria mais oportunidades de crescimento. Ela pediu à equipe de análise de marketing para se concentrar em um produto da Bellabeat e analisar os dados de uso de dispositivos inteligentes para obter informações sobre como as pessoas já estão usando seus dispositivos inteligentes. Assim, por meio dessas informações, ela gostaria de conferir excelentes recomendações sobre como essas tendências podem nortear a estratégia de marketing da Bellabeat.
 
+## Etapas do processo de análise de dados
+
+### ❓ [Pergunta](#1-pergunta)
+### 💻 [Preparação](#2-preparação)
+### 🛠 [Processamento](#3-processamento)
+### 📊 [Análise](#4-análise)
+### 📋 [Compartilhamento](#5-compartilhamento)
+### 🧗‍♀️ [Ação](#6-ação)
+
+## 1. Pergunta
+
+## 2. Preparação
+
