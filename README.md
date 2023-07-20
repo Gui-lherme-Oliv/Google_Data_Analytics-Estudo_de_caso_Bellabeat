@@ -36,6 +36,9 @@ A Urška sabe que uma análise dos dados de consumo disponíveis da Bellabeat re
 ### 🧗 [Ação](#6-ação)
 
 ## 1. Pergunta
+Tarefa de negócios: Analisar os dados de uso de dispositivos inteligentes para obter informações sobre como os consumidores usam dispositivos inteligentes que não são da Bellabeat. Em seguida, gerar insights visando ajudar a orientar a estratégia de marketing da empresa para que ela adquira maior participação no mercado global de dispositivos inteligentes.
+
+Parte interessada principal:
 
 ## 2. Preparação
 
