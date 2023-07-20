@@ -44,5 +44,7 @@ Partes interessadas secundárias: Equipe de análise de marketing da Bellabeat.
 
 ## 2. Preparação
 #### Conjunto de dados utilizado
-- Dados do rastreador de condicionamento físico FitBit (CC0: Domínio público, conjunto de dados disponibilizado por meio de Möbius): Este conjunto de dados de Kaggle contém os dados obtidos entre 03/12/2016 e 05/12/2016 dos rastreadores de condicionamento físico pessoal de trinta usuários do Fitbit. Trinta usuários elegíveis do Fitbit consentiram com o envio de dados pessoais do rastreador, incluindo os resultados a cada minuto de atividade física, frequência cardíaca e monitoramento do sono. São abrangidas informações sobre atividades diárias, passos e frequência cardíaca que podem ser usadas para explorar os hábitos dos usuários. Disponível em https://www.kaggle.com/datasets/arashnic/fitbit
+- Dados do rastreador de condicionamento físico FitBit (CC0: Domínio público, conjunto de dados disponibilizado por meio de Möbius): Este conjunto de dados de Kaggle contém os dados obtidos entre 03/12/2016 e 05/12/2016 dos rastreadores de condicionamento físico pessoal de trinta usuários do Fitbit. Trinta usuários elegíveis do Fitbit consentiram com o envio de dados pessoais do rastreador, incluindo os resultados a cada minuto de atividade física, frequência cardíaca e monitoramento do sono. São abrangidas informações sobre atividades diárias, passos e frequência cardíaca que podem ser usadas para explorar os hábitos dos usuários. Disponível em https://www.kaggle.com/datasets/arashnic/fitbit.
+
+
 
