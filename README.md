@@ -60,5 +60,6 @@ Em relação à credibilidade da fonte dos dados, ela é considerada boa pois se
 
 ## 3. Processamento
 
-
+Incluí a data na nomenclatura das planilhas no formato padrão internacional aaaammdd.
+Ferramenta escolhida foi 
 
