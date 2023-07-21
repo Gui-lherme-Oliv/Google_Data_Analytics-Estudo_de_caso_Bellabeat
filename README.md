@@ -43,14 +43,16 @@ Partes interessadas primárias: Urška Sršen e Sando Mur, membros do time execu
 Partes interessadas secundárias: Equipe de análise de marketing da Bellabeat.
 
 ## 2. Preparação
-O conjunto de dados utilizado foi o _FitBit Fitness Tracker Data_ ou, em português, Dados do rastreador de condicionamento físico FitBit (CC0: Domínio público, conjunto de dados disponibilizado por meio de Möbius): Este conjunto de dados do Kaggle contém os dados obtidos entre 03/12/2016 e 05/12/2016 dos rastreadores de condicionamento físico pessoal de trinta usuários do Fitbit. Trinta usuários elegíveis do Fitbit consentiram com o envio de dados pessoais do rastreador, incluindo os resultados a cada minuto de atividade física, frequência cardíaca e monitoramento do sono. São abrangidas informações sobre atividades diárias, passos e frequência cardíaca que podem ser usadas para explorar os hábitos dos usuários. 
+O conjunto de dados utilizado foi o _FitBit Fitness Tracker Data_ ou, em português, Dados do rastreador de condicionamento físico FitBit (CC0: Domínio público, conjunto de dados disponibilizado por meio de Möbius): Este conjunto de dados do Kaggle contém os dados obtidos entre 03/12/2016 e 05/12/2016 dos rastreadores de condicionamento físico pessoal de trinta usuários do Fitbit. Trinta usuários elegíveis do FitBit consentiram com o envio de dados pessoais do rastreador, incluindo os resultados a cada minuto de atividade física, frequência cardíaca e monitoramento do sono. São abrangidas informações sobre atividades diárias, passos e frequência cardíaca que podem ser usadas para explorar os hábitos dos usuários. 
 
 Disponível em https://www.kaggle.com/datasets/arashnic/fitbit.
 
 O conjunto de dados contém aproximadamente 322 MB, disposto em 18 planilhas no formato CSV (_Comma-separated values_) com os dados organizados no formato longo (cada sujeito terá dados em várias linhas).
 
-Em relação à credibilidade da fonte dos dados, ela é considerada boa pois segue a abordagem ROCCC:
-- Confiabilidade (_**R**eliability_): Os dados consentidos pelos usuários do FitBit foram gerados através de uma pesquisa distribuída via Amazon Mechanical Turk.
+Em relação à credibilidade da fonte dos dados, ela é considerada boa pois segue a abordagem **ROCCC**:
+- Confiável (_**R**eliable_): Os dados consentidos pelos usuários do FitBit foram gerados através de uma pesquisa distribuída via Amazon Mechanical Turk.
+- Original (_**O**riginal_): Trinta usuários elegíveis do FitBit consentiram com o envio de dados pessoais do rastreador.
+- Compreensivo (_**C**omprehensive_): Os dados incluem os resultados a cada minuto de atividade física, frequência cardíaca e monitoramento do sono. São abrangidas informações sobre atividades diárias, passos e frequência cardíaca que podem ser usadas para explorar os hábitos dos usuários. Esse conjunto de dados pode ter algumas limitações devido ao fato da amostra ser de apenas 30 usuários diferentes e de conter dados de apenas 3 dias.
 
 
 
