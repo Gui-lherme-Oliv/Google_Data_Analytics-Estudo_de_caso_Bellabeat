@@ -1,7 +1,7 @@
 # ESTUDO DE CASO: Como uma empresa de tecnologia de bem-estar pode agir com inteligência?
 #### Autor: Guilherme Oliveira da Rocha Cunha
 
-#### Data da última atualização: 20/07/2023
+#### Data da última atualização: 21/07/2023
 
 ## Cenário
 Você é um analista de dados júnior que trabalha na equipe de analistas de marketing da Bellabeat, uma fabricante de produtos de alta tecnologia voltados à saúde para mulheres. A Bellabeat é uma pequena empresa de sucesso, mas tem potencial para se adquirir maior participação no mercado global de dispositivos inteligentes. Urška Sršen, cofundadora e CEO da Bellabeat, acredita que a análise de dados de condicionamento físico a partir de dispositivos inteligentes pode ajudar a abrir novas oportunidades de crescimento para a empresa. Foi solicitado que você se concentre em um dos produtos da Bellabeat e analise dados de dispositivos inteligentes para obter informações sobre como os consumidores estão usando esses dispositivos. Os insights que você descobrir ajudarão a orientar a estratégia de marketing da empresa. Você apresentará sua análise à equipe executiva da Bellabeat juntamente com suas recomendações de alto nível para a estratégia de marketing da empresa.
@@ -43,8 +43,11 @@ Partes interessadas primárias: Urška Sršen e Sando Mur, membros do time execu
 Partes interessadas secundárias: Equipe de análise de marketing da Bellabeat.
 
 ## 2. Preparação
-#### Conjunto de dados utilizado
-- Dados do rastreador de condicionamento físico FitBit (CC0: Domínio público, conjunto de dados disponibilizado por meio de Möbius): Este conjunto de dados de Kaggle contém os dados obtidos entre 03/12/2016 e 05/12/2016 dos rastreadores de condicionamento físico pessoal de trinta usuários do Fitbit. Trinta usuários elegíveis do Fitbit consentiram com o envio de dados pessoais do rastreador, incluindo os resultados a cada minuto de atividade física, frequência cardíaca e monitoramento do sono. São abrangidas informações sobre atividades diárias, passos e frequência cardíaca que podem ser usadas para explorar os hábitos dos usuários. Disponível em https://www.kaggle.com/datasets/arashnic/fitbit.
+O conjunto de dados utilizado foi o _FitBit Fitness Tracker Data_ ou, em português, Dados do rastreador de condicionamento físico FitBit (CC0: Domínio público, conjunto de dados disponibilizado por meio de Möbius): Este conjunto de dados de Kaggle contém os dados obtidos entre 03/12/2016 e 05/12/2016 dos rastreadores de condicionamento físico pessoal de trinta usuários do Fitbit. Trinta usuários elegíveis do Fitbit consentiram com o envio de dados pessoais do rastreador, incluindo os resultados a cada minuto de atividade física, frequência cardíaca e monitoramento do sono. São abrangidas informações sobre atividades diárias, passos e frequência cardíaca que podem ser usadas para explorar os hábitos dos usuários. 
+
+Disponível em https://www.kaggle.com/datasets/arashnic/fitbit.
+
+O conjunto de dados contém aproximadamente 322MB, disposto em 18 planilhas no formato CSV (_Comma-separated values_) com os dados organizados no formato longo (cada sujeito terá dados em várias linhas).
 
 
 
