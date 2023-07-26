@@ -94,7 +94,7 @@ Sobre os conjuntos de dados que serão utilizados para a análise:
 - _peso_: Apresenta os valores da variável WeightKg entre outras;
 - _sonoDia_: Apresenta os valores por dia das variáveis TotalMinutesAsleep, TotalTimeInBed entre outras.
 
-Visualizando e consultando o resumo estatístico dos conjuntos de dados:
+Visualizando e consultando o resumo das medidas estatísticas dos conjuntos de dados:
 ```
 view(atividadeDia)
 summary(atividadeDia)
@@ -255,8 +255,32 @@ ggplot(data=atividadeDia, aes(x=calories, y=total_steps)) +
   labs(title="Relação entre o Total de Passos e o Gasto Calórico por dia",x="Calorias Gastas", y="Número de Passos")
 ```
 
-### 4.4 
+### 4.4 Gasto Calórico durante a semana
+```
+#média
+caloriasDia_media <- atividadeDia %>% 
+  group_by(dia_semana) %>% 
+  summarise(calorias_media = mean(calories))
 
+#plotagem
+ggplot(data=caloriasDia_media, aes(x=dia_semana, y=calorias_media))+ 
+  geom_bar(stat="identity", fill="steelblue")+
+  theme(axis.text.x = element_text(angle = 15))+
+  labs(title="Gasto Calórico médio durante a semana", x="Dia da Semana", y="Calorias Gastas")
+
+#máximo
+caloriasDia_max <- atividadeDia %>% 
+  group_by(dia_semana) %>% 
+  summarise(calorias_max = max(calories))
+
+#plotagem
+ggplot(data=caloriasDia_max, aes(x=dia_semana, y=calorias_max))+ 
+  geom_bar(stat="identity", fill="steelblue")+
+  theme(axis.text.x = element_text(angle = 15))+
+  labs(title="Gasto Calórico máximo durante a semana", x="Dia da Semana", y="Calorias Gastas")
+```
+
+### 4.5
 
 
 
