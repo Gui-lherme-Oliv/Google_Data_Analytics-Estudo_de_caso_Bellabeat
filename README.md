@@ -54,7 +54,9 @@ Uma boa fonte de dados deve seguir a abordagem **ROCCC**:
 - Atual (_**C**urrent_): Apesar dos dados serem do ano de 2016, como se trata de um estudo de caso, os dados serão tratados como atuais.
 - Citado (_**C**ited_): Os dados foram coletados a partir de terceiros, portanto desconhecidos. Licença de domínio público.
 
-**Observação:** Esse conjunto de dados pode ter algumas limitações devido ao fato da amostra ser de apenas 30 usuários diferentes, logo é aconselhado adicionar outros dados para ajudar a lidar com essas limitações.
+Em relação à credibilidade e integridade dos dados
+
+**Observação:** Esse conjunto de dados pode ter algumas limitações devido ao fato da amostra ser de apenas 30 usuários diferentes e de não apresentar informações demográficas. Um viés de amostragem pode ser identificado, logo é aconselhado adicionar outros dados para ajudar a lidar com essas limitações.
 
 ## 3. Processamento
 
