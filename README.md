@@ -280,7 +280,17 @@ ggplot(data=caloriasDia_max, aes(x=dia_semana, y=calorias_max))+
   labs(title="Gasto Calórico máximo durante a semana", x="Dia da Semana", y="Calorias Gastas")
 ```
 
-### 4.5
+### 4.5 Variação da Intensidade Total Média de acordo com o horário
+```
+intensidadeHora_media <- intensidadeHora %>%
+  group_by(hora) %>%
+  summarise(intensidade_total_media = mean(total_intensity))
+
+#plotagem
+ggplot(data=intensidadeHora_media, aes(x=hora, y=intensidade_total_media)) + geom_histogram(stat = "identity", fill='darkblue') +
+  theme(axis.text.x = element_text(angle = 90)) + 
+  labs(title="Variação da Intensidade Total Média de acordo com o horário", x="Horário", y="Intensidade Total Média")
+```
 
 
 
