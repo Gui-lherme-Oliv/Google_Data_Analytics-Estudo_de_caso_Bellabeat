@@ -159,7 +159,7 @@ sonoDia <- sonoDia %>%
 ```
 
 ### 3.4 Correção e consistência das colunas de data e hora
-Essa etapa é foi realizada para que a partir das colunas referentes à data em cada um dos conjuntos de dados, seja criada uma coluna nomeada _data_ no formato dd/mm/aaaa. A partir das colunas referentes à data e hora foram criadas duas colunas nomeadas _data_ e _hora_ no formato dd/mm/aaaa e hh:mm:ss, respectivamente.
+Esta etapa foi realizada para que a partir das colunas referentes à data em cada um dos conjuntos de dados, seja criada uma coluna nomeada _data_ no formato dd/mm/aaaa. A partir das colunas referentes à data e hora foram criadas duas colunas nomeadas _data_ e _hora_ no formato dd/mm/aaaa e hh:mm:ss, respectivamente.
 
 ```
 atividadeDia$activity_date=as.POSIXct(atividadeDia$activity_date, format="%m/%d/%Y", tz=Sys.timezone())
@@ -199,9 +199,31 @@ caloriasHora$dia_semana <- factor(caloriasHora$dia_semana, levels= c("segunda-fe
 ```
 
 ## 4. Análise
+### 4.1 Unindo tabelas
+Esta etapa foi realizada para que algumas tabelas fossem unidas possibilitando análises utilizando suas variáveis
+```
+diario_atividade_sono <- merge(atividadeDia, sonoDia, by=c("id","data"))
+horario_calorias_intensidade_passos <- merge(caloriasHora, intensidadeHora, by=c("id","data","hora"))
+horario_calorias_intensidade_passos <- merge(horario_calorias_intensidade_passos, passosHora, by=c("id","data","hora"))
+```
+### 4.2 Média do tempo consumido diariamente em cada nível de atividade
+```
+ativDia_media <- atividadeDia %>%
+  summarise(mean(very_active_minutes), mean(fairly_active_minutes), 
+            mean(lightly_active_minutes), mean(sedentary_minutes))
 
+ativDia_mediaPorcent <- prop.table(ativDia_media)*100 #cálculo das porcentagens
 
+ativPorcent <- data.frame(
+  legenda=c("Muito ativo", "Razoavelmente ativo", "Levemente ativo", "Sedentário"),
+  valores=c(ativDia_mediaPorcent$`mean(very_active_minutes)`,ativDia_mediaPorcent$`mean(fairly_active_minutes)`,
+            ativDia_mediaPorcent$`mean(lightly_active_minutes)`,ativDia_mediaPorcent$`mean(sedentary_minutes)`))
 
+plot_ly(ativPorcent, labels = ~legenda, values = ~valores, type = 'pie',textposition = 'outside',textinfo = 'label+percent') %>%
+  layout(title = 'Média do tempo consumido diariamente em cada nível de atividade',
+         xaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE),
+         yaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE))
+```
 
 
 
