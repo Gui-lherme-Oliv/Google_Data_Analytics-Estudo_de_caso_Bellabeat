@@ -240,13 +240,18 @@ ativPorcent <- data.frame(
   valores=c(ativDia_mediaPorcent$`mean(very_active_minutes)`,ativDia_mediaPorcent$`mean(fairly_active_minutes)`,
             ativDia_mediaPorcent$`mean(lightly_active_minutes)`,ativDia_mediaPorcent$`mean(sedentary_minutes)`))
 
+#plotagem
 plot_ly(ativPorcent, labels = ~legenda, values = ~valores, type = 'pie',textposition = 'outside',textinfo = 'label+percent') %>%
   layout(title = 'Média do tempo consumido diariamente em cada nível de atividade',
          xaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE),
          yaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE))
 ```
 
-### 4.3
+### 4.3 Relação entre o Total de Passos e o Total de Calorias Gastas por dia
+#plotagem
+ggplot(data=atividadeDia, aes(x=calories, y=total_steps)) + 
+  geom_point() + geom_smooth() +
+  labs(title="Relação entre o Total de Passos e o Total de Calorias Gastas por dia",x="Calorias Gastas", y="Número de Passos")
 
 
 
