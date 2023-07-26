@@ -245,8 +245,6 @@ plot_ly(ativPorcent, labels = ~legenda, values = ~valores, type = 'pie',textposi
          xaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE),
          yaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE))
 ```
-![image](https://github.com/Gui-lherme-Oliv/Google_Data_Analytics-Estudo_de_caso_Bellabeat/assets/123426025/330b492a-b408-4d8e-9f1f-451a71de33d8)
-
 
 ### 4.3
 
