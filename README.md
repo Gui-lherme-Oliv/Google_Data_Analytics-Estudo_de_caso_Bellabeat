@@ -255,7 +255,7 @@ ggplot(data=atividadeDia, aes(x=calories, y=total_steps)) +
   labs(title="Relação entre o Total de Passos e o Gasto Calórico por dia",x="Calorias Gastas", y="Número de Passos")
 ```
 
-### 4.4 Gasto Calórico durante a semana
+### 4.4 Variação do Gasto Calórico durante a semana
 ```
 #média
 caloriasDia_media <- atividadeDia %>% 
