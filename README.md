@@ -133,7 +133,7 @@ sum(duplicated(intensidadeHora))
 sum(duplicated(passosHora))
 sum(duplicated(sonoDia))
 ```
-Apenas o conjunto de dados _sonoDia_ apresentou duplicatas. Removendo:
+Apenas o conjunto de dados _sonoDia_ apresentou duplicatas. Removendo-as:
 ```
 sonoDia <- sonoDia %>%
   distinct()
