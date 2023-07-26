@@ -198,6 +198,7 @@ caloriasHora$dia_semana <- factor(caloriasHora$dia_semana, levels= c("segunda-fe
                                                                      "sexta-feira", "sábado", "domingo"))
 ```
 
+## 4.Análise
 
 
 
