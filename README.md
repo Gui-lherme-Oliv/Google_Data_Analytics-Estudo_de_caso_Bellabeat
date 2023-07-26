@@ -62,5 +62,46 @@ Inicialmente todas as planilhas foram nomeadas de acordo com as convenções de 
 
 ### 3.1 Instalando os pacotes e abrindo as bibliotecas
 ```
-aaa
+install.packages("tidyverse")
+install.packages("here")
+install.packages("skimr")
+install.packages("janitor")
+install.packages("lubridate")
+install.packages("plotly")
+
+library(tidyverse)
+library(here)
+library(skimr)
+library(janitor)
+library(lubridate)
+library(plotly)
 ```
+
+### 3.2 Importando os conjuntos de dados
+```
+atividadeDia <- read.csv("~/FitBit/Fitabase Data 4.12.16-5.12.16/dailyActivity_merged_20160312-20160512.csv")
+caloriasHora <- read.csv("~/FitBit/Fitabase Data 4.12.16-5.12.16/hourlyCalories_merged_20160312-20160512.csv")
+intensidadeHora <- read.csv("~/FitBit/Fitabase Data 4.12.16-5.12.16/hourlyIntensities_merged_20160312-20160512.csv")
+passosHora <- read.csv ("~/FitBit/Fitabase Data 4.12.16-5.12.16/hourlySteps_merged_20160312-20160512.csv")
+sonoDia <- read.csv("~/FitBit/Fitabase Data 4.12.16-5.12.16/sleepDay_merged_20160312-20160512.csv")
+peso <- read.csv("~/FitBit/Fitabase Data 4.12.16-5.12.16/weightLogInfo_merged_20160312-20160512.csv")
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
