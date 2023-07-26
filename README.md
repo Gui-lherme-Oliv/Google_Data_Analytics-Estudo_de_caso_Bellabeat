@@ -93,6 +93,27 @@ Sobre os conjuntos de dados que serão utilizados para a análise:
 - _passosHora_: Apresenta os valores por dia e hora da variável StepTotal;
 - _peso_: Apresenta os valores da variável WeightKg entre outras;
 - _sonoDia_: Apresenta os valores por dia das variáveis TotalMinutesAsleep, TotalTimeInBed entre outras.
+
+Visualizando e consultando o resumo estatístico dos conjuntos de dados:
+```
+view(atividadeDia)
+summary(atividadeDia)
+
+view(caloriasHora)
+summary(caloriasHora)
+
+view(intensidadeHora)
+summary(intensidadeHora)
+
+view(passosHora)
+summary(passosHora)
+
+view(sonoDia)
+summary(sonoDia)
+
+view(peso)
+summary(peso)
+```
   
 ### 3.3 Limpeza de dados
 #### 3.3.1 Verificando a quantidade de usuários distintos
@@ -227,7 +248,7 @@ plot_ly(ativPorcent, labels = ~legenda, values = ~valores, type = 'pie',textposi
 ![image](https://github.com/Gui-lherme-Oliv/Google_Data_Analytics-Estudo_de_caso_Bellabeat/assets/123426025/330b492a-b408-4d8e-9f1f-451a71de33d8)
 
 
-
+### 4.3
 
 
 
