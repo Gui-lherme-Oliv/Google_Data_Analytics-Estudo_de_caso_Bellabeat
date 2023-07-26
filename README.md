@@ -1,7 +1,7 @@
 # ESTUDO DE CASO: Como uma empresa de tecnologia de bem-estar pode agir com inteligência?
 #### Autor: Guilherme Oliveira da Rocha Cunha
 
-#### Data da última atualização: 21/07/2023
+#### Data da última atualização: 26/07/2023
 
 ## Cenário
 Você é um analista de dados júnior que trabalha na equipe de analistas de marketing da Bellabeat, uma fabricante de produtos de alta tecnologia voltados à saúde para mulheres. A Bellabeat é uma pequena empresa de sucesso, mas tem potencial para se adquirir maior participação no mercado global de dispositivos inteligentes. Urška Sršen, cofundadora e CEO da Bellabeat, acredita que a análise de dados de condicionamento físico a partir de dispositivos inteligentes pode ajudar a abrir novas oportunidades de crescimento para a empresa. Foi solicitado que você se concentre em um dos produtos da Bellabeat e analise dados de dispositivos inteligentes para obter informações sobre como os consumidores estão usando esses dispositivos. Os insights que você descobrir ajudarão a orientar a estratégia de marketing da empresa. Você apresentará sua análise à equipe executiva da Bellabeat juntamente com suas recomendações de alto nível para a estratégia de marketing da empresa.
@@ -49,12 +49,12 @@ Disponível em https://www.kaggle.com/datasets/arashnic/fitbit.
 
 O conjunto de dados contém aproximadamente 322 MB, disposto em 18 planilhas no formato CSV (_Comma-separated values_) com os dados organizados no formato longo (cada sujeito terá dados em várias linhas).
 
-Em relação à credibilidade da fonte dos dados, ela é considerada boa pois segue a abordagem **ROCCC**:
+Uma boa fonte de dados deve seguir a abordagem **ROCCC**:
 - Confiável (_**R**eliable_): Os dados consentidos pelos usuários do FitBit foram gerados através de uma pesquisa distribuída mediante o serviço de crowdsourcing Amazon Mechanical Turk.
 - Original (_**O**riginal_): Trinta usuários elegíveis do FitBit consentiram com o envio de dados pessoais do rastreador.
 - Compreensivo (_**C**omprehensive_): Os dados incluem os resultados a cada minuto de atividade física, frequência cardíaca e monitoramento do sono. São abrangidas informações sobre atividades diárias, passos e frequência cardíaca que podem ser usadas para explorar os hábitos dos usuários. Esse conjunto de dados pode ter algumas limitações devido ao fato da amostra ser de apenas 30 usuários diferentes.
 - Atual (_**C**urrent_): Apesar dos dados serem do ano de 2016, como se trata de um estudo de caso, os dados serão tratados como atuais.
-- Citado (_**C**ited_): Citado por outros alunos do programa Google Data Anaytics.
+- Citado (_**C**ited_): Os dados foram coletados a partir de terceiros, portanto desconhecidos. Licença de domínio público.
 
 **Observação:** Esse conjunto de dados pode ter algumas limitações devido ao fato da amostra ser de apenas 30 usuários diferentes, logo é aconselhado adicionar outros dados para ajudar a lidar com essas limitações.
 
