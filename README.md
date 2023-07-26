@@ -113,7 +113,7 @@ Valores apresentados:
 - 24 para sonoDia
 - 8 para peso
 
-Por ser uma amostra de dados muito pequena, o conjunto de dados "peso" não será utilizado na análise.
+Por ser uma amostra de dados muito pequena, o conjunto de dados _peso_ não será utilizado na análise.
 
 #### 3.3.2 Verificando a quantidade de valores N/A
 ```
@@ -123,7 +123,21 @@ sum(is.na(intensidadeHora))
 sum(is.na(passosHora))
 sum(is.na(sonoDia))
 ```
-Nenhum dos conjuntos de dados apresenta valores N/A
+Nenhum dos conjuntos de dados apresentou valores N/A.
+
+#### 3.3.2 Verificando e removendo duplicatas
+```
+sum(duplicated(atividadeDia))
+sum(duplicated(caloriasHora))
+sum(duplicated(intensidadeHora))
+sum(duplicated(passosHora))
+sum(duplicated(sonoDia))
+```
+Apenas o conjunto de dados _sonoDia_ apresentou duplicatas. Removendo:
+```
+sonoDia <- sonoDia %>%
+  distinct()
+```
 
 
 
