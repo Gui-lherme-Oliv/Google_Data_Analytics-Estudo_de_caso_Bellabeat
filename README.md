@@ -125,7 +125,7 @@ sum(is.na(sonoDia))
 ```
 Nenhum dos conjuntos de dados apresentou valores N/A.
 
-#### 3.3.2 Verificando e removendo duplicatas
+#### 3.3.3 Verificando e removendo duplicatas
 ```
 sum(duplicated(atividadeDia))
 sum(duplicated(caloriasHora))
@@ -138,6 +138,66 @@ Apenas o conjunto de dados _sonoDia_ apresentou duplicatas. Removendo:
 sonoDia <- sonoDia %>%
   distinct()
 ```
+
+#### 3.3.4 Renomenado as colunas
+Para garantir que o nome das colunas estejam utilizando a sintaxe correta, sejam únicos e consistentes, as colunas serão renomeadas utilizando a função _clean_names()_.
+```
+atividadeDia <- atividadeDia %>% 
+  clean_names()
+
+caloriasHora <- caloriasHora %>% 
+  clean_names()
+
+intensidadeHora <- intensidadeHora %>% 
+  clean_names()
+
+passosHora <- passosHora %>% 
+  clean_names()
+
+sonoDia <- sonoDia %>% 
+  clean_names()
+```
+
+### 3.4 Correção e consistência das colunas de data e hora
+Essa etapa é foi realizada para que a partir das colunas referentes à data em cada um dos conjuntos de dados, seja criada uma coluna nomeada _data_ no formato dd/mm/aaaa. A partir das colunas referentes à data e hora foram criadas duas colunas nomeadas _data_ e _hora_ no formato dd/mm/aaaa e hh:mm:ss, respectivamente.
+
+```
+atividadeDia$activity_date=as.POSIXct(atividadeDia$activity_date, format="%m/%d/%Y", tz=Sys.timezone())
+atividadeDia$data <- format(atividadeDia$activity_date, format = "%d/%m/%Y")
+
+caloriasHora$activity_hour=as.POSIXct(caloriasHora$activity_hour, format="%m/%d/%Y %I:%M:%S %p", tz=Sys.timezone())
+caloriasHora$data <- format(caloriasHora$activity_hour, format = "%d/%m/%Y")
+caloriasHora$hora <- format(caloriasHora$activity_hour, format = "%H:%M:%S")
+
+intensidadeHora$activity_hour=as.POSIXct(intensidadeHora$activity_hour, format="%m/%d/%Y %I:%M:%S %p", tz=Sys.timezone())
+intensidadeHora$data <- format(intensidadeHora$activity_hour, format = "%d/%m/%Y")
+intensidadeHora$hora <- format(intensidadeHora$activity_hour, format = "%H:%M:%S")
+
+passosHora$activity_hour=as.POSIXct(passosHora$activity_hour, format="%m/%d/%Y %I:%M:%S %p", tz=Sys.timezone())
+passosHora$data <- format(passosHora$activity_hour, format = "%d/%m/%Y")
+passosHora$hora <- format(passosHora$activity_hour, format = "%H:%M:%S")
+
+sonoDia$sleep_day=as.POSIXct(sonoDia$sleep_day, format="%m/%d/%Y %I:%M:%S %p", tz=Sys.timezone())
+sonoDia$data <- format(sonoDia$sleep_day, format = "%d/%m/%Y")
+```
+
+### 3.5 Inserindo a coluna _dia_semana_
+A coluna _dia_semana_ representa o dia da semana referente à cada uma das datas da coluna _data_ criada anteriormente.
+```
+atividadeDia <- atividadeDia %>% 
+  mutate(dia_semana = weekdays(as.Date(data, "%d/%m/%Y")))
+#ordenando os dias da semana
+atividadeDia$dia_semana <- factor(atividadeDia$dia_semana, levels= c("segunda-feira", "terça-feira", 
+                                                                     "quarta-feira", "quinta-feira", 
+                                                                     "sexta-feira", "sábado", "domingo"))
+caloriasHora <- caloriasHora %>% 
+  mutate(dia_semana = weekdays(as.Date(data, "%d/%m/%Y")))
+#ordenando os dias da semana
+caloriasHora$dia_semana <- factor(caloriasHora$dia_semana, levels= c("segunda-feira", "terça-feira", 
+                                                                     "quarta-feira", "quinta-feira", 
+                                                                     "sexta-feira", "sábado", "domingo"))
+```
+
 
 
 
