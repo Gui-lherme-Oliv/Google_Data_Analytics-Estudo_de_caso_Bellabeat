@@ -43,9 +43,7 @@ Partes interessadas primárias: Urška Sršen e Sando Mur, membros do time execu
 Partes interessadas secundárias: Equipe de análise de marketing da Bellabeat.
 
 ## 2. Preparação
-O conjunto de dados utilizado foi o _FitBit Fitness Tracker Data_ ou, em português, Dados do rastreador de condicionamento físico FitBit (CC0: Domínio público, conjunto de dados disponibilizado por meio de Möbius): Este conjunto de dados do Kaggle contém os dados obtidos entre 12/03/2016 e 12/05/2016 dos rastreadores de condicionamento físico pessoal de trinta usuários do Fitbit. Trinta usuários elegíveis do FitBit consentiram com o envio de dados pessoais do rastreador, incluindo os resultados a cada minuto de atividade física, frequência cardíaca e monitoramento do sono. São abrangidas informações sobre atividades diárias, passos e frequência cardíaca que podem ser usadas para explorar os hábitos dos usuários. 
-
-Disponível em https://www.kaggle.com/datasets/arashnic/fitbit.
+O conjunto de dados utilizado foi o _FitBit Fitness Tracker Data_ ou, em português, Dados do rastreador de condicionamento físico FitBit (CC0: Domínio público, conjunto de dados disponibilizado por meio de Möbius): Este [conjunto de dados do Kaggle](https://www.kaggle.com/datasets/arashnic/fitbit) contém os dados obtidos entre 12/03/2016 e 12/05/2016 dos rastreadores de condicionamento físico pessoal de trinta usuários do Fitbit. Trinta usuários elegíveis do FitBit consentiram com o envio de dados pessoais do rastreador, incluindo os resultados a cada minuto de atividade física, frequência cardíaca e monitoramento do sono. São abrangidas informações sobre atividades diárias, passos e frequência cardíaca que podem ser usadas para explorar os hábitos dos usuários. 
 
 O conjunto de dados contém aproximadamente 322 MB, disposto em 18 planilhas no formato CSV (_Comma-separated values_) com os dados organizados no formato longo (cada sujeito terá dados em várias linhas).
 
