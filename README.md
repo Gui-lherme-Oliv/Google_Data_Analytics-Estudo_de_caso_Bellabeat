@@ -247,11 +247,15 @@ plot_ly(ativPorcent, labels = ~legenda, values = ~valores, type = 'pie',textposi
          yaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE))
 ```
 
-### 4.3 Relação entre o Total de Passos e o Total de Calorias Gastas por dia
+### 4.3 Relação entre o Total de Passos e o Gasto Calórico por dia
+```
 #plotagem
 ggplot(data=atividadeDia, aes(x=calories, y=total_steps)) + 
   geom_point() + geom_smooth() +
-  labs(title="Relação entre o Total de Passos e o Total de Calorias Gastas por dia",x="Calorias Gastas", y="Número de Passos")
+  labs(title="Relação entre o Total de Passos e o Gasto Calórico por dia",x="Calorias Gastas", y="Número de Passos")
+```
+
+### 4.4 
 
 
 
