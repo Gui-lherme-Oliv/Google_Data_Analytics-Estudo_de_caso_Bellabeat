@@ -45,7 +45,7 @@ Partes interessadas secundárias: Equipe de análise de marketing da Bellabeat.
 ## 2. Preparação
 O conjunto de dados utilizado foi o _FitBit Fitness Tracker Data_ ou, em português, Dados do rastreador de condicionamento físico FitBit (CC0: Domínio público, conjunto de dados disponibilizado por meio de Möbius): Este [conjunto de dados do Kaggle](https://www.kaggle.com/datasets/arashnic/fitbit) contém os dados obtidos entre 12/03/2016 e 12/05/2016 dos rastreadores de condicionamento físico pessoal de trinta usuários do Fitbit. Trinta usuários elegíveis do FitBit consentiram com o envio de dados pessoais do rastreador, incluindo os resultados a cada minuto de atividade física, frequência cardíaca e monitoramento do sono. São abrangidas informações sobre atividades diárias, passos e frequência cardíaca que podem ser usadas para explorar os hábitos dos usuários. 
 
-O conjunto de dados contém aproximadamente 322 MB, disposto em 18 planilhas no formato CSV (_Comma-separated values_) com os dados organizados no formato longo (cada sujeito terá dados em várias linhas).
+O conjunto de dados contém aproximadamente 322 MB, disposto em 18 planilhas no formato CSV (_Comma-separated values_) com os dados organizados no formato longo (cada usuário terá dados em várias linhas).
 
 Uma boa fonte de dados deve seguir a abordagem **ROCCC**:
 - Confiável (_**R**eliable_): Os dados consentidos pelos usuários do FitBit foram gerados através de uma pesquisa distribuída mediante o serviço de crowdsourcing Amazon Mechanical Turk.
@@ -86,8 +86,38 @@ passosHora <- read.csv ("~/FitBit/Fitabase Data 4.12.16-5.12.16/hourlySteps_merg
 sonoDia <- read.csv("~/FitBit/Fitabase Data 4.12.16-5.12.16/sleepDay_merged_20160312-20160512.csv")
 peso <- read.csv("~/FitBit/Fitabase Data 4.12.16-5.12.16/weightLogInfo_merged_20160312-20160512.csv")
 ```
+Sobre os conjuntos de dados que serão utilizados para a análise:
+- atividadeDia: 
+### 3.3 Limpeza de dados
+#### 3.3.1 Verificando a quantidade de usuários distintos
+```
+n_distinct(atividadeDia$Id)
+n_distinct(caloriasHora$Id)
+n_distinct(intensidadeHora$Id)
+n_distinct(passosHora$Id)
+n_distinct(sonoDia$Id)
+n_distinct(peso$Id)
+```
 
+Valores apresentados:
+- 33 para atividadeDia
+- 33 para caloriasHora
+- 33 para intensidadeHora
+- 33 para passosHora
+- 24 para sonoDia
+- 8 para peso
 
+Por ser uma amostra de dados muito pequena, o conjunto de dados "peso" não será utilizado na análise.
+
+#### 3.3.2 Verificando a quantidade de valores N/A
+```
+sum(is.na(atividadeDia))
+sum(is.na(caloriasHora))
+sum(is.na(intensidadeHora))
+sum(is.na(passosHora))
+sum(is.na(sonoDia))
+```
+Nenhum dos conjuntos de dados apresenta valores N/A
 
 
 
