@@ -87,12 +87,12 @@ peso <- read.csv("~/FitBit/Fitabase Data 4.12.16-5.12.16/weightLogInfo_merged_20
 sonoDia <- read.csv("~/FitBit/Fitabase Data 4.12.16-5.12.16/sleepDay_merged_20160312-20160512.csv")
 ```
 Sobre os conjuntos de dados que serão utilizados para a análise:
-- atividadeDia: Apresenta os valores por dia das variáveis TotalSteps, VeryActiveMinutes, FairlyActiveMinutes, LightlyActiveMinutes, SedentaryMinutes, Calories entre outras;
-- caloriasHora: Apresenta os valores por dia e hora da variável Calories;
-- intensidadeHora: Apresenta os valores por dia e hora das variáveis TotalIntensity e AverageIntensity;
-- passosHora: Apresenta os valores por dia e hora da variável StepTotal;
-- peso: Apresenta os valores da variável WeightKg entre outras;
-- sonoDia: Apresenta os valores por dia das variáveis TotalMinutesAsleep, TotalTimeInBed entre outras.
+- _atividadeDia_: Apresenta os valores por dia das variáveis TotalSteps, VeryActiveMinutes, FairlyActiveMinutes, LightlyActiveMinutes, SedentaryMinutes, Calories entre outras;
+- _caloriasHora_: Apresenta os valores por dia e hora da variável Calories;
+- _intensidadeHora_: Apresenta os valores por dia e hora das variáveis TotalIntensity e AverageIntensity;
+- _passosHora_: Apresenta os valores por dia e hora da variável StepTotal;
+- _peso_: Apresenta os valores da variável WeightKg entre outras;
+- _sonoDia_: Apresenta os valores por dia das variáveis TotalMinutesAsleep, TotalTimeInBed entre outras.
   
 ### 3.3 Limpeza de dados
 #### 3.3.1 Verificando a quantidade de usuários distintos
