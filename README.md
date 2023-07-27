@@ -376,18 +376,37 @@ ggplot(data=sonoDia_media, aes(x=dia_semana, y=sono_media,
 ### 5.1.
 ![image](https://github.com/Gui-lherme-Oliv/Google_Data_Analytics-Estudo_de_caso_Bellabeat/assets/123426025/8ae6e84d-b6bc-442c-8a65-41e0c97f9229)
 
+A partir do gráfico acima pode-se identificar que os usuários passam em média mais de 80% do tempo diário em estado sedentário. A soma do tempo médio dos outros tipos corresponde a menos de 20% do tempo.
+
 ### 5.2.
 ![image](https://github.com/Gui-lherme-Oliv/Google_Data_Analytics-Estudo_de_caso_Bellabeat/assets/123426025/a6b2716e-09ad-44a4-b3c2-bb810ae364b2)
 
+A partir do gráfico acima pode-se identificar que uma correlação positiva entre o total de passos dados diariamente e o gasto calórico, ou seja, quanto mais passos mais calorias são consumidas.
+
+### 5.3.
 ![image](https://github.com/Gui-lherme-Oliv/Google_Data_Analytics-Estudo_de_caso_Bellabeat/assets/123426025/9a9b2cda-489b-47c0-9df6-b9a6b5596181)
 
+A partir do gráfico acima pode-se identificar que o maior gasto calórico médio acontece na terça-feira e no sábado e o menor gasto acontece na quinta-feira e no domingo.
+
+### 5.4.
 ![image](https://github.com/Gui-lherme-Oliv/Google_Data_Analytics-Estudo_de_caso_Bellabeat/assets/123426025/da01ff3c-a41f-466b-8e87-4dee7667fa0f)
 
+A partir do gráfico acima pode-se identificar que o maior valor registrado de gasto calórico aconteceu na quinta-feira e o menor valor aconteceu na sexta-feira.
+
+### 5.5.
 ![image](https://github.com/Gui-lherme-Oliv/Google_Data_Analytics-Estudo_de_caso_Bellabeat/assets/123426025/33e995ee-ef7f-42ef-a3f3-011729a16238)
 
+A partir do gráfico acima pode-se identificar que os maiores valores da intensidade toal média ocorrem entre 17:00h e 19:00h e os menores entre 02:00h e 04:00h.
+
+### 5.6.
 ![image](https://github.com/Gui-lherme-Oliv/Google_Data_Analytics-Estudo_de_caso_Bellabeat/assets/123426025/66e61d17-e405-457a-993e-59a4b038c784)
 
+A partir do gráfico acima pode-se identificar que o maior gasto calório médio ocorre entre 17:00h e 19:00h e o menor entre 02:00h e 04:00h.
+
+### 5.7.
 ![image](https://github.com/Gui-lherme-Oliv/Google_Data_Analytics-Estudo_de_caso_Bellabeat/assets/123426025/52f0c7d9-6922-44b1-94a6-840cf70a5f83)
+
+
 
 ![image](https://github.com/Gui-lherme-Oliv/Google_Data_Analytics-Estudo_de_caso_Bellabeat/assets/123426025/6b46d0f8-4ce3-4f0d-a0de-c50b59ec39bc)
 
