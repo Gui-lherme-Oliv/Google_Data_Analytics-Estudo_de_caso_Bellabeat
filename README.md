@@ -282,7 +282,7 @@ ggplot(data=caloriasDia_max, aes(x=dia_semana, y=calorias_max))+
   labs(title="Gasto calórico máximo durante a semana", x="Dia da semana", y="Calorias gastas")
 ```
 
-### 4.5 Variação da Intensidade Total Média de acordo com o horário
+### 4.5 Variação da Média da Intensidade Total de acordo com o horário
 ```
 intensidadeHora_media <- intensidadeHora %>%
   group_by(hora) %>%
@@ -291,10 +291,36 @@ intensidadeHora_media <- intensidadeHora %>%
 #plotagem
 ggplot(data=intensidadeHora_media, aes(x=hora, y=intensidade_total_media)) + geom_histogram(stat = "identity", fill='darkblue') +
   theme(axis.text.x = element_text(angle = 90)) + 
-  labs(title="Variação da Intensidade Total Média de acordo com o horário", x="Horário", y="Intensidade total média")
+  labs(title="Variação da Média da Intensidade Total de acordo com o horário", x="Horário", y="Média da intensidade total")
 ```
 
-### 4.6 Relação entre Tempo Dormindo e Nível de Atividade
+### 4.6 Variação da Média de Calorias Gastas de acordo com o horário
+```
+caloriasHora_media <- caloriasHora %>% 
+  group_by(hora) %>% 
+  summarise(calorias_media = mean(calories))
+
+#plotagem
+ggplot(data=caloriasHora_media, aes(x=hora, y=calorias_media)) +
+  geom_histogram(stat = "identity", fill= 'darkblue') +
+  theme(axis.text.x = element_text(angle = 90)) +
+  labs(title="Variação da Média de Calorias Gastas de acordo com o horário", x="Horário", y="Média de calorias gastas")
+```
+
+### 4.7 Variação do Tempo médio em Estado Sedentário durante a semana 
+```
+sedentarioDia_media <- atividadeDia %>% 
+  group_by(dia_semana) %>% 
+  summarise(sedentario_media = mean(sedentary_minutes))
+
+#plotagem
+ggplot(data=sedentarioDia_media, aes(x=dia_semana, y=sedentario_media))+ 
+  geom_bar(stat="identity", fill="steelblue")+
+  theme(axis.text.x = element_text(angle = 15))+
+  labs(title="Variação do Tempo médio em Estado Sedentário durante a semana", x="Dia da semana", y="Tempo em estado sedentário (min)")
+```
+
+### 4.8 Relação entre Tempo Dormindo e Nível de Atividade
 ```
 #verificando valores máximo e mínimo das coordenadas x e y
 summary(diario_atividade_sono)
@@ -324,20 +350,7 @@ ggplot(data=diario_atividade_sono) +
   labs(title="Relação entre Tempo Dormindo e Nível de Atividade", x="Tempo dormindo (min)", y="Tempo de atividade (min)")
 ```
 
-### 4.7 Variação da Média de Calorias Gastas de acordo com o horário
-```
-caloriasHora_media <- caloriasHora %>% 
-  group_by(hora) %>% 
-  summarise(calorias_media = mean(calories))
-
-#plotagem
-ggplot(data=caloriasHora_media, aes(x=hora, y=calorias_media)) +
-  geom_histogram(stat = "identity", fill= 'darkblue') +
-  theme(axis.text.x = element_text(angle = 90)) +
-  labs(title="Variação da Média de Calorias Gastas de acordo com o horário", x="Horário", y="Média de calorias gastas")
-```
-
-### 4.8 Variação do Tempo médio dormindo durante a semana
+### 4.9 Variação do Tempo médio dormindo durante a semana
 ```
 sonoDia_media <- diario_atividade_sono %>% 
   group_by(dia_semana) %>% 
@@ -349,18 +362,7 @@ ggplot(data=sonoDia_media, aes(x=dia_semana, y=sono_media))+
   labs(title="Tempo médio dormindo durante a semana", x="Dia da semana", y="Tempo dormindo (min)")
 ```
  
-### 4.9 Variação do Tempo médio em Estado Sedentário durante a semana 
-```
-sedentarioDia_media <- atividadeDia %>% 
-  group_by(dia_semana) %>% 
-  summarise(sedentario_media = mean(sedentary_minutes))
 
-#plotagem
-ggplot(data=sedentarioDia_media, aes(x=dia_semana, y=sedentario_media))+ 
-  geom_bar(stat="identity", fill="steelblue")+
-  theme(axis.text.x = element_text(angle = 15))+
-  labs(title="Variação do Tempo médio em Estado Sedentário durante a semana", x="Dia da semana", y="Tempo em estado sedentário (min)")
-```
 
 
 
