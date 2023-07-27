@@ -350,7 +350,7 @@ ggplot(data=diario_atividade_sono) +
   labs(title="Relação entre Tempo Dormindo e Nível de Atividade", x="Tempo dormindo (min)", y="Tempo de atividade (min)")
 ```
 
-### 4.9 Variação do Tempo médio dormindo durante a semana
+### 4.9 Variação do Tempo Médio Dormindo durante a semana
 ```
 sonoDia_media <- diario_atividade_sono %>% 
   group_by(dia_semana) %>% 
@@ -359,7 +359,7 @@ sonoDia_media <- diario_atividade_sono %>%
 ggplot(data=sonoDia_media, aes(x=dia_semana, y=sono_media))+ 
   geom_bar(stat="identity", fill="steelblue")+
   theme(axis.text.x = element_text(angle = 15))+
-  labs(title="Tempo médio dormindo durante a semana", x="Dia da semana", y="Tempo dormindo (min)")
+  labs(title="Variação do Tempo Médio Dormindo durante a semana", x="Dia da semana", y="Tempo médio dormindo (min)")
 ```
  
 
