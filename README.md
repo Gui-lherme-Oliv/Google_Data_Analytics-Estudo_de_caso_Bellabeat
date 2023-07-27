@@ -266,7 +266,7 @@ caloriasDia_media <- atividadeDia %>%
 ggplot(data=caloriasDia_media, aes(x=dia_semana, y=calorias_media))+ 
   geom_bar(stat="identity", fill="steelblue")+
   theme(axis.text.x = element_text(angle = 15))+
-  labs(title="Gasto Calórico médio durante a semana", x="Dia da Semana", y="Calorias Gastas")
+  labs(title="Gasto calórico médio durante a semana", x="Dia da Semana", y="Calorias Gastas")
 
 #máximo
 caloriasDia_max <- atividadeDia %>% 
@@ -277,7 +277,7 @@ caloriasDia_max <- atividadeDia %>%
 ggplot(data=caloriasDia_max, aes(x=dia_semana, y=calorias_max))+ 
   geom_bar(stat="identity", fill="steelblue")+
   theme(axis.text.x = element_text(angle = 15))+
-  labs(title="Gasto Calórico máximo durante a semana", x="Dia da Semana", y="Calorias Gastas")
+  labs(title="Gasto calórico máximo durante a semana", x="Dia da Semana", y="Calorias Gastas")
 ```
 
 ### 4.5 Variação da Intensidade Total Média de acordo com o horário
