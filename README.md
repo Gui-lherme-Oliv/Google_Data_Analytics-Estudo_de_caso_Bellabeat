@@ -252,7 +252,7 @@ plot_ly(ativPorcent, labels = ~legenda, values = ~valores, type = 'pie',textposi
 #plotagem
 ggplot(data=atividadeDia, aes(x=calories, y=total_steps)) + 
   geom_point() + geom_smooth() +
-  labs(title="Relação entre o Total de Passos e o Gasto Calórico por dia",x="Calorias Gastas", y="Número de Passos")
+  labs(title="Relação entre o Total de Passos e o Gasto Calórico por dia",x="Calorias gastas", y="Número de passos")
 ```
 
 ### 4.4 Variação do Gasto Calórico durante a semana
@@ -266,7 +266,7 @@ caloriasDia_media <- atividadeDia %>%
 ggplot(data=caloriasDia_media, aes(x=dia_semana, y=calorias_media))+ 
   geom_bar(stat="identity", fill="steelblue")+
   theme(axis.text.x = element_text(angle = 15))+
-  labs(title="Gasto calórico médio durante a semana", x="Dia da Semana", y="Calorias Gastas")
+  labs(title="Gasto calórico médio durante a semana", x="Dia da semana", y="Calorias gastas")
 
 #máximo
 caloriasDia_max <- atividadeDia %>% 
@@ -277,7 +277,7 @@ caloriasDia_max <- atividadeDia %>%
 ggplot(data=caloriasDia_max, aes(x=dia_semana, y=calorias_max))+ 
   geom_bar(stat="identity", fill="steelblue")+
   theme(axis.text.x = element_text(angle = 15))+
-  labs(title="Gasto calórico máximo durante a semana", x="Dia da Semana", y="Calorias Gastas")
+  labs(title="Gasto calórico máximo durante a semana", x="Dia da semana", y="Calorias gastas")
 ```
 
 ### 4.5 Variação da Intensidade Total Média de acordo com o horário
@@ -289,7 +289,7 @@ intensidadeHora_media <- intensidadeHora %>%
 #plotagem
 ggplot(data=intensidadeHora_media, aes(x=hora, y=intensidade_total_media)) + geom_histogram(stat = "identity", fill='darkblue') +
   theme(axis.text.x = element_text(angle = 90)) + 
-  labs(title="Variação da Intensidade Total Média de acordo com o horário", x="Horário", y="Intensidade Total Média")
+  labs(title="Variação da Intensidade Total Média de acordo com o horário", x="Horário", y="Intensidade total média")
 ```
 
 
