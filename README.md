@@ -1,7 +1,7 @@
 # ESTUDO DE CASO: Como uma empresa de tecnologia de bem-estar pode agir com inteligência?
 #### Autor: Guilherme Oliveira da Rocha Cunha
 
-#### Data da última atualização: 27/07/2023
+#### Data da última atualização: 28/07/2023
 
 ## Cenário
 Você é um analista de dados júnior que trabalha na equipe de analistas de marketing da Bellabeat, uma fabricante de produtos de alta tecnologia voltados à saúde para mulheres. A Bellabeat é uma pequena empresa de sucesso, mas tem potencial para se adquirir maior participação no mercado global de dispositivos inteligentes. Urška Sršen, cofundadora e CEO da Bellabeat, acredita que a análise de dados de condicionamento físico a partir de dispositivos inteligentes pode ajudar a abrir novas oportunidades de crescimento para a empresa. Foi solicitado que você se concentre em um dos produtos da Bellabeat e analise dados de dispositivos inteligentes para obter informações sobre como os consumidores estão usando esses dispositivos. Os insights que você descobrir ajudarão a orientar a estratégia de marketing da empresa. Você apresentará sua análise à equipe executiva da Bellabeat juntamente com suas recomendações de alto nível para a estratégia de marketing da empresa.
@@ -386,7 +386,7 @@ A partir do gráfico acima pode-se identificar que uma correlação positiva ent
 ### 5.3.
 ![image](https://github.com/Gui-lherme-Oliv/Google_Data_Analytics-Estudo_de_caso_Bellabeat/assets/123426025/9a9b2cda-489b-47c0-9df6-b9a6b5596181)
 
-A partir do gráfico acima pode-se identificar que o maior gasto calórico médio acontece na terça-feira e no sábado e o menor gasto acontece na quinta-feira e no domingo.
+A partir do gráfico acima pode-se identificar que os maiores gastos calóricos médio acontecem na terça-feira e no sábado e os menores acontecem na quinta-feira e no domingo.
 
 ### 5.4.
 ![image](https://github.com/Gui-lherme-Oliv/Google_Data_Analytics-Estudo_de_caso_Bellabeat/assets/123426025/da01ff3c-a41f-466b-8e87-4dee7667fa0f)
@@ -401,16 +401,29 @@ A partir do gráfico acima pode-se identificar que os maiores valores da intensi
 ### 5.6.
 ![image](https://github.com/Gui-lherme-Oliv/Google_Data_Analytics-Estudo_de_caso_Bellabeat/assets/123426025/66e61d17-e405-457a-993e-59a4b038c784)
 
-A partir do gráfico acima pode-se identificar que o maior gasto calório médio ocorre entre 17:00h e 19:00h e o menor entre 02:00h e 04:00h.
+A partir do gráfico acima pode-se identificar que os maiores gastos calóricos médio ocorrem entre 17:00h e 19:00h e os menores entre 02:00h e 04:00h.
 
 ### 5.7.
 ![image](https://github.com/Gui-lherme-Oliv/Google_Data_Analytics-Estudo_de_caso_Bellabeat/assets/123426025/52f0c7d9-6922-44b1-94a6-840cf70a5f83)
 
+A partir do gráfico acima pode-se identificar que os maiores tempos médio em estado sedentário ocorrem na segunda-feira e terça-feira e os menores na quinta-feira e no sábado.
 
-
+### 5.8.
 ![image](https://github.com/Gui-lherme-Oliv/Google_Data_Analytics-Estudo_de_caso_Bellabeat/assets/123426025/6b46d0f8-4ce3-4f0d-a0de-c50b59ec39bc)
 
+A partir do gráfico acima pode-se identificar que
+
+### 5.9.
 ![image](https://github.com/Gui-lherme-Oliv/Google_Data_Analytics-Estudo_de_caso_Bellabeat/assets/123426025/fa949e57-6285-4f88-b98a-966bfc810763)
+
+A partir do gráfico acima pode-se identificar que o maiores tempos médio dormindo ocorrem na quarta-feira e no domingo e os menores na terça-feira e na quinta-feira.
+
+### 5.10. Conclusões
+- Primeiramente
+
+
+
+
 
 
 
