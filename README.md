@@ -221,12 +221,14 @@ caloriasHora$dia_semana <- factor(caloriasHora$dia_semana, levels= c("segunda-fe
 
 ## 4. Análise
 ### 4.1 Unindo tabelas
-Esta etapa foi realizada para que algumas tabelas fossem unidas possibilitando análises utilizando suas variáveis
+Esta etapa foi realizada para que alguns conjuntos de dados fossem unidos (inner join) possibilitando análises utilizando suas variáveis.
 ```
 diario_atividade_sono <- merge(atividadeDia, sonoDia, by=c("id","data"))
 horario_calorias_intensidade_passos <- merge(caloriasHora, intensidadeHora, by=c("id","data","hora"))
 horario_calorias_intensidade_passos <- merge(horario_calorias_intensidade_passos, passosHora, by=c("id","data","hora"))
 ```
+**Observação:** O inner join funciona como uma interseção entre duas tabelas, retorna os valores em comum de ambas as tabelas, de acordo com uma condição dada. Como o conjunto de dados _sonoDia_ possui menos observações que o conjunto _atividadeDia_ logo o conjunto gerado _diario_atividade_sono_ terá menos observações que _atividadeDia_. Quando não for necessário utilizar esses dois conjuntos de dados gerados, serão utilizados os conjuntos processados anteriormente.
+
 ### 4.2 Média do tempo consumido diariamente em cada nível de atividade
 ```
 ativDia_media <- atividadeDia %>%
@@ -294,7 +296,8 @@ ggplot(data=intensidadeHora_media, aes(x=hora, y=intensidade_total_media)) + geo
 
 ### 4.6 Relação entre Tempo Dormindo e Nível de Atividade
 ```
-summary(diario_atividade_sono) #verificando valores máximo e mínimo das coordenadas x e y
+#verificando valores máximo e mínimo das coordenadas x e y
+summary(diario_atividade_sono)
 
 #plotagem
 ggplot(data=diario_atividade_sono) +
