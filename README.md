@@ -257,9 +257,9 @@ ggplot(data=atividadeDia, aes(x=calories, y=total_steps)) +
   labs(title="Relação entre o Total de Passos e o Gasto Calórico por dia",x="Calorias gastas", y="Número de passos")
 ```
 
-### 4.4 Variação do Gasto Calórico durante a semana
+### 4.4 Variação do Gasto Calórico (médio e máximo) durante a semana
 ```
-#média
+#médio
 caloriasDia_media <- atividadeDia %>% 
   group_by(dia_semana) %>% 
   summarise(calorias_media = mean(calories))
@@ -373,7 +373,23 @@ ggplot(data=sonoDia_media, aes(x=dia_semana, y=sono_media,
 ```
 
 ## 5. Compartilhamento
+![image](https://github.com/Gui-lherme-Oliv/Google_Data_Analytics-Estudo_de_caso_Bellabeat/assets/123426025/8ae6e84d-b6bc-442c-8a65-41e0c97f9229)
 
+![image](https://github.com/Gui-lherme-Oliv/Google_Data_Analytics-Estudo_de_caso_Bellabeat/assets/123426025/a6b2716e-09ad-44a4-b3c2-bb810ae364b2)
+
+![image](https://github.com/Gui-lherme-Oliv/Google_Data_Analytics-Estudo_de_caso_Bellabeat/assets/123426025/9a9b2cda-489b-47c0-9df6-b9a6b5596181)
+
+![image](https://github.com/Gui-lherme-Oliv/Google_Data_Analytics-Estudo_de_caso_Bellabeat/assets/123426025/da01ff3c-a41f-466b-8e87-4dee7667fa0f)
+
+![image](https://github.com/Gui-lherme-Oliv/Google_Data_Analytics-Estudo_de_caso_Bellabeat/assets/123426025/33e995ee-ef7f-42ef-a3f3-011729a16238)
+
+![image](https://github.com/Gui-lherme-Oliv/Google_Data_Analytics-Estudo_de_caso_Bellabeat/assets/123426025/66e61d17-e405-457a-993e-59a4b038c784)
+
+![image](https://github.com/Gui-lherme-Oliv/Google_Data_Analytics-Estudo_de_caso_Bellabeat/assets/123426025/52f0c7d9-6922-44b1-94a6-840cf70a5f83)
+
+![image](https://github.com/Gui-lherme-Oliv/Google_Data_Analytics-Estudo_de_caso_Bellabeat/assets/123426025/6b46d0f8-4ce3-4f0d-a0de-c50b59ec39bc)
+
+![image](https://github.com/Gui-lherme-Oliv/Google_Data_Analytics-Estudo_de_caso_Bellabeat/assets/123426025/fa949e57-6285-4f88-b98a-966bfc810763)
 
 
 
