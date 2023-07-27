@@ -321,8 +321,18 @@ ggplot(data=diario_atividade_sono) +
   labs(title="Relação entre Tempo Dormindo e Nível de Atividade", x="Tempo dormindo (min)", y="Tempo de atividade (min)")
 ```
 
-### 4.7 
+### 4.7 Variação da Média de Calorias Gastas de acordo com o horário
+```
+caloriasHora_media <- caloriasHora %>% 
+  group_by(hora) %>% 
+  summarise(calorias_media = mean(calories))
 
+#plotagem
+ggplot(data=caloriasHora_media, aes(x=hora, y=calorias_media)) +
+  geom_histogram(stat = "identity", fill= 'darkblue') +
+  theme(axis.text.x = element_text(angle = 90)) +
+  labs(title="Variação da Média de Calorias Gastas de acordo com o horário", x="Horário", y="Média de calorias gastas")
+```
 
 
 
