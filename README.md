@@ -60,7 +60,7 @@ Uma boa fonte de dados deve seguir a abordagem **ROCCC**:
 
 Inicialmente todas as planilhas foram nomeadas de acordo com as convenções de nomenclatura de arquivo, incluindo a data na nomenclatura das planilhas no formato padrão internacional aaaammdd.
 
-### 3.1 Instalando os pacotes e abrindo as bibliotecas
+### 3.1. Instalando os pacotes e abrindo as bibliotecas
 ```
 install.packages("tidyverse")
 install.packages("here")
@@ -77,7 +77,7 @@ library(lubridate)
 library(plotly)
 ```
 
-### 3.2 Importando os conjuntos de dados
+### 3.2. Importando os conjuntos de dados
 ```
 atividadeDia <- read.csv("~/FitBit/Fitabase Data 4.12.16-5.12.16/dailyActivity_merged_20160312-20160512.csv")
 caloriasHora <- read.csv("~/FitBit/Fitabase Data 4.12.16-5.12.16/hourlyCalories_merged_20160312-20160512.csv")
@@ -115,8 +115,8 @@ view(peso)
 summary(peso)
 ```
   
-### 3.3 Limpeza de dados
-#### 3.3.1 Verificando a quantidade de usuários distintos
+### 3.3. Limpeza de dados
+#### 3.3.1. Verificando a quantidade de usuários distintos
 ```
 n_distinct(atividadeDia$Id)
 n_distinct(caloriasHora$Id)
@@ -136,7 +136,7 @@ Valores apresentados:
 
 Por ser uma amostra de dados muito pequena, o conjunto de dados _peso_ não será utilizado na análise.
 
-#### 3.3.2 Verificando a quantidade de valores N/A
+#### 3.3.2. Verificando a quantidade de valores N/A
 ```
 sum(is.na(atividadeDia))
 sum(is.na(caloriasHora))
@@ -146,7 +146,7 @@ sum(is.na(sonoDia))
 ```
 Nenhum dos conjuntos de dados apresentou valores N/A.
 
-#### 3.3.3 Verificando e removendo duplicatas
+#### 3.3.3. Verificando e removendo duplicatas
 ```
 sum(duplicated(atividadeDia))
 sum(duplicated(caloriasHora))
@@ -160,7 +160,7 @@ sonoDia <- sonoDia %>%
   distinct()
 ```
 
-#### 3.3.4 Renomenado as colunas
+#### 3.3.4. Renomenado as colunas
 Para garantir que o nome das colunas estejam utilizando a sintaxe correta, sejam únicos e consistentes, as colunas serão renomeadas utilizando a função _clean_names()_.
 ```
 atividadeDia <- atividadeDia %>% 
@@ -179,7 +179,7 @@ sonoDia <- sonoDia %>%
   clean_names()
 ```
 
-### 3.4 Correção e consistência das colunas de data e hora
+### 3.4. Correção e consistência das colunas de data e hora
 Esta etapa foi realizada para que a partir das colunas referentes à data em cada um dos conjuntos de dados, seja criada uma coluna nomeada _data_ no formato dd/mm/aaaa. A partir das colunas referentes à data e hora foram criadas duas colunas nomeadas _data_ e _hora_ no formato dd/mm/aaaa e hh:mm:ss, respectivamente.
 
 ```
@@ -202,7 +202,7 @@ sonoDia$sleep_day=as.POSIXct(sonoDia$sleep_day, format="%m/%d/%Y %I:%M:%S %p", t
 sonoDia$data <- format(sonoDia$sleep_day, format = "%d/%m/%Y")
 ```
 
-### 3.5 Inserindo a coluna _dia_semana_
+### 3.5. Inserindo a coluna _dia_semana_
 A coluna _dia_semana_ representa o dia da semana referente à cada uma das datas da coluna _data_ criada anteriormente.
 ```
 atividadeDia <- atividadeDia %>% 
@@ -220,7 +220,7 @@ caloriasHora$dia_semana <- factor(caloriasHora$dia_semana, levels= c("segunda-fe
 ```
 
 ## 4. Análise
-### 4.1 Unindo tabelas
+### 4.1. Unindo tabelas
 Esta etapa foi realizada para que alguns conjuntos de dados fossem unidos (inner join) possibilitando análises utilizando suas variáveis.
 ```
 diario_atividade_sono <- merge(atividadeDia, sonoDia, by=c("id","data"))
@@ -229,7 +229,7 @@ horario_calorias_intensidade_passos <- merge(horario_calorias_intensidade_passos
 ```
 **Observação:** O inner join funciona como uma interseção entre duas tabelas, retorna os valores em comum de ambas as tabelas, de acordo com uma condição dada. Como o conjunto de dados _sonoDia_ possui menos observações que o conjunto _atividadeDia_ logo o conjunto gerado _diario_atividade_sono_ terá menos observações que _atividadeDia_. Quando não for necessário utilizar esses dois conjuntos de dados gerados, serão utilizados os conjuntos processados anteriormente.
 
-### 4.2 Porcentagem da Média do tempo consumido diariamente em cada nível de atividade
+### 4.2. Porcentagem da Média do tempo consumido diariamente em cada nível de atividade
 ```
 ativDia_media <- atividadeDia %>%
   summarise(mean(very_active_minutes), mean(fairly_active_minutes), 
@@ -249,7 +249,7 @@ plot_ly(ativPorcent, labels = ~legenda, values = ~valores, type = 'pie',textposi
          yaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE))
 ```
 
-### 4.3 Relação entre o Total de Passos e o Gasto Calórico por dia
+### 4.3. Relação entre o Total de Passos e o Gasto Calórico por dia
 ```
 #plotagem
 ggplot(data=atividadeDia, aes(x=calories, y=total_steps)) + 
@@ -257,7 +257,7 @@ ggplot(data=atividadeDia, aes(x=calories, y=total_steps)) +
   labs(title="Relação entre o Total de Passos e o Gasto Calórico por dia",x="Calorias gastas", y="Número de passos")
 ```
 
-### 4.4 Variação do Gasto Calórico (médio e máximo) durante a semana
+### 4.4. Variação do Gasto Calórico (médio e máximo) durante a semana
 ```
 #médio
 caloriasDia_media <- atividadeDia %>% 
@@ -286,7 +286,7 @@ ggplot(data=caloriasDia_max, aes(x=dia_semana, y=calorias_max,
   labs(title="Gasto Calórico Máximo durante a semana", x="Dia da semana", y="Calorias gastas")
 ```
 
-### 4.5 Variação da Média da Intensidade Total de acordo com o horário
+### 4.5. Variação da Média da Intensidade Total de acordo com o horário
 ```
 intensidadeHora_media <- intensidadeHora %>%
   group_by(hora) %>%
@@ -299,7 +299,7 @@ ggplot(data=intensidadeHora_media, aes(x=hora, y=intensidade_total_media)) +
   labs(title="Variação da Média da Intensidade Total de acordo com o horário", x="Horário", y="Média da intensidade total")
 ```
 
-### 4.6 Variação da Média de Calorias Gastas de acordo com o horário
+### 4.6. Variação da Média de Calorias Gastas de acordo com o horário
 ```
 caloriasHora_media <- caloriasHora %>% 
   group_by(hora) %>% 
@@ -312,7 +312,7 @@ ggplot(data=caloriasHora_media, aes(x=hora, y=calorias_media)) +
   labs(title="Variação da Média de Calorias Gastas de acordo com o horário", x="Horário", y="Média de calorias gastas")
 ```
 
-### 4.7 Variação do Tempo Médio em Estado Sedentário durante a semana 
+### 4.7. Variação do Tempo Médio em Estado Sedentário durante a semana 
 ```
 sedentarioDia_media <- atividadeDia %>% 
   group_by(dia_semana) %>% 
@@ -327,7 +327,7 @@ ggplot(data=sedentarioDia_media, aes(x=dia_semana, y=sedentario_media,
   labs(title="Variação do Tempo Médio em Estado Sedentário durante a semana", x="Dia da semana", y="Tempo em estado sedentário (min)")
 ```
 
-### 4.8 Relação entre Tempo Dormindo e Tempo em cada Nível de Atividade
+### 4.8. Relação entre Tempo Dormindo e Tempo em cada Nível de Atividade
 ```
 #verificando valores máximo e mínimo para os limites do gráfico
 summary(diario_atividade_sono)
@@ -357,7 +357,7 @@ ggplot(data=diario_atividade_sono) +
   labs(title="Relação entre Tempo Dormindo e Tempo em cada Nível de Atividade", x="Tempo dormindo (min)", y="Tempo de atividade (min)")
 ```
 
-### 4.9 Variação do Tempo Médio Dormindo durante a semana
+### 4.9. Variação do Tempo Médio Dormindo durante a semana
 ```
 sonoDia_media <- diario_atividade_sono %>% 
   group_by(dia_semana) %>% 
@@ -373,8 +373,10 @@ ggplot(data=sonoDia_media, aes(x=dia_semana, y=sono_media,
 ```
 
 ## 5. Compartilhamento
+### 5.1.
 ![image](https://github.com/Gui-lherme-Oliv/Google_Data_Analytics-Estudo_de_caso_Bellabeat/assets/123426025/8ae6e84d-b6bc-442c-8a65-41e0c97f9229)
 
+### 5.2.
 ![image](https://github.com/Gui-lherme-Oliv/Google_Data_Analytics-Estudo_de_caso_Bellabeat/assets/123426025/a6b2716e-09ad-44a4-b3c2-bb810ae364b2)
 
 ![image](https://github.com/Gui-lherme-Oliv/Google_Data_Analytics-Estudo_de_caso_Bellabeat/assets/123426025/9a9b2cda-489b-47c0-9df6-b9a6b5596181)
