@@ -363,6 +363,7 @@ sonoDia_media <- diario_atividade_sono %>%
   group_by(dia_semana) %>% 
   summarise(sono_media = mean(total_minutes_asleep))
 
+#plotagem
 ggplot(data=sonoDia_media, aes(x=dia_semana, y=sono_media,
                                label=format(round(sono_media, 1), nsmall=1)))+ 
   geom_bar(stat="identity", fill="steelblue")+
