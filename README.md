@@ -292,7 +292,36 @@ ggplot(data=intensidadeHora_media, aes(x=hora, y=intensidade_total_media)) + geo
   labs(title="Variação da Intensidade Total Média de acordo com o horário", x="Horário", y="Intensidade total média")
 ```
 
-### 4.6 
+### 4.6 Relação entre Tempo Dormindo e Nível de Atividade
+```
+summary(diario_atividade_sono) #verificando valores máximo e mínimo das coordenadas x e y
+
+#plotagem
+ggplot(data=diario_atividade_sono) +
+  
+  geom_point(aes(x=total_minutes_asleep, y=very_active_minutes), color="blue") + 
+  geom_smooth(aes(x=total_minutes_asleep, y=very_active_minutes), color="black", se=FALSE) +
+  
+  geom_point(aes(x=total_minutes_asleep, y=fairly_active_minutes), color="green") + 
+  geom_smooth(aes(x=total_minutes_asleep, y=fairly_active_minutes), color="black", se=FALSE) +
+  
+  geom_point(aes(x=total_minutes_asleep, y=lightly_active_minutes), color="yellow") + 
+  geom_smooth(aes(x=total_minutes_asleep, y=lightly_active_minutes), color="black", se=FALSE) +
+  
+  geom_point(aes(x=total_minutes_asleep, y=sedentary_minutes), color="red") + 
+  geom_smooth(aes(x=total_minutes_asleep, y=sedentary_minutes), color="black", se=FALSE) +
+  
+  scale_x_continuous(limits = c(0,900))+
+  scale_y_continuous(limits = c(0,1300))+
+  
+  annotate("text", x=760, y=65, label="Muito e Razoavelmente ativo", color="black", size=3)+
+  annotate("text", x=805, y=210, label="Levemente ativo", color="black", size=3)+
+  annotate("text", x=760, y=650, label="Sedentário", color="black", size=3)+
+  
+  labs(title="Relação entre Tempo Dormindo e Nível de Atividade", x="Tempo dormindo (min)", y="Tempo de atividade (min)")
+```
+
+### 4.7 
 
 
 
