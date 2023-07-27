@@ -292,7 +292,7 @@ ggplot(data=intensidadeHora_media, aes(x=hora, y=intensidade_total_media)) + geo
   labs(title="Variação da Intensidade Total Média de acordo com o horário", x="Horário", y="Intensidade total média")
 ```
 
-
+### 4.6 
 
 
 
