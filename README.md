@@ -50,7 +50,7 @@ O conjunto de dados contém aproximadamente 322 MB, disposto em 18 planilhas no 
 Uma boa fonte de dados deve seguir a abordagem **ROCCC**:
 - Confiável (_**R**eliable_): Os dados consentidos pelos usuários do FitBit foram gerados através de uma pesquisa distribuída mediante o serviço de crowdsourcing Amazon Mechanical Turk.
 - Original (_**O**riginal_): Trinta usuários elegíveis do FitBit consentiram com o envio de dados pessoais do rastreador.
-- Compreensivo (_**C**omprehensive_): Os dados incluem os resultados a cada minuto de atividade física, frequência cardíaca e monitoramento do sono. São abrangidas informações sobre atividades diárias, passos e frequência cardíaca que podem ser usadas para explorar os hábitos dos usuários. Esse conjunto de dados pode ter algumas limitações devido ao fato da amostra ser de apenas 30 usuários diferentes.
+- Abrangente (_**C**omprehensive_): Os dados incluem os resultados a cada minuto de atividade física, frequência cardíaca e monitoramento do sono. São abrangidas informações sobre atividades diárias, passos e frequência cardíaca que podem ser usadas para explorar os hábitos dos usuários. Esse conjunto de dados pode ter algumas limitações devido ao fato da amostra ser de apenas 30 usuários diferentes.
 - Atual (_**C**urrent_): Apesar dos dados serem do ano de 2016, como se trata de um estudo de caso, os dados serão tratados como atuais.
 - Citado (_**C**ited_): Os dados foram coletados a partir de terceiros, portanto desconhecidos. Licença de domínio público.
 
@@ -220,6 +220,11 @@ caloriasHora$dia_semana <- factor(caloriasHora$dia_semana, levels= c("segunda-fe
 ```
 
 ## 4. Análise
+### 4.2. Resumo das medidas estatísticas
+```
+
+```
+
 ### 4.1. Unindo tabelas
 Esta etapa foi realizada para que alguns conjuntos de dados fossem unidos (inner join) possibilitando análises utilizando suas variáveis.
 ```
@@ -419,7 +424,7 @@ A partir do gráfico acima pode-se identificar que
 A partir do gráfico acima pode-se identificar que o maiores tempos médio dormindo ocorrem na quarta-feira e no domingo e os menores na terça-feira e na quinta-feira.
 
 ### 5.10. Conclusões
-- Primeiramente
+- Primeiramente quão abrangentes são os dados para formar uma análise precisa?
 
 
 
