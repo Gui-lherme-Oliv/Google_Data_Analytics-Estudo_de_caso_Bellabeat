@@ -458,15 +458,21 @@ A partir do gráfico acima pode-se identificar que os maiores tempos médio em e
 
 A partir do gráfico acima pode-se identificar que existe uma correlação negativa entre o tempo dormindo e o tempo em atividade sedentária.
 
+**Recomendação:** Se os usuários do aplicativo da Bellabeat quiserem melhorar o sono, o aplicativo pode recomendar a redução do tempo em estado sedentário.
+
 ### 5.9.
 ![image](https://github.com/Gui-lherme-Oliv/Google_Data_Analytics-Estudo_de_caso_Bellabeat/assets/123426025/fa949e57-6285-4f88-b98a-966bfc810763)
 
 A partir do gráfico acima pode-se identificar que o maiores tempos médio dormindo ocorrem na quarta-feira e no domingo e os menores na terça-feira e na quinta-feira.
 
-### 6. Ação
-- Primeiramente quão abrangentes são os dados para formar uma análise precisa?
+**Recomendação:** O aplicativo da Bellabeat pode oferecer a opção de definir notificações de acordo com o horário, para que tempo médio dormindo seja consistente durante toda a semana.
 
-- Foi solicitado que você se concentre em um dos produtos da Bellabeat e analise dados de dispositivos inteligentes para obter informações sobre como os consumidores estão usando esses dispositivos. Os insights que você descobrir ajudarão a orientar a estratégia de marketing da empresa. Você apresentará sua análise à equipe executiva da Bellabeat juntamente com suas recomendações de alto nível para a estratégia de marketing da empresa.
+### 6. Ação
+#### 6.1. Considerações
+- Primeiramente quão abrangentes são os dados para formar uma análise precisa?
+- Lembre-se de que precisamos dar suporte a esses insights com mais dados, porque a correlação entre alguns dados não significa causalidade.
+
+#### 6.2. Recomendações
 
 
 
