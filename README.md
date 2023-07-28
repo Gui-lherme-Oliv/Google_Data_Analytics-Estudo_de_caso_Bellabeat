@@ -249,8 +249,11 @@ sonoDia %>%
          total_time_in_bed) %>%
   summary()
 ```
-Algumas descobertas interessantes deste resumo:
--
+Algumas descobertas interessantes deste resumo estatístico:
+- A média de passos por dia é de cerca de 7600 passos e o valor máximo de mais de 36000 passos, sendo que 75% dos usuários dão menos que 10700 passos por dia.
+- A média da quantidade de tempo em estado muito ativo por dia é de cerca de 21 minutos, já a média em estado sedentário é de 990 minutos.
+- A média de calorias gasta por dia é de cerca de 2300 kcal e por hora de 97 kcal, o que faz sentido (97x24≈2300).
+- A média de tempo dormindo por dia é de cerca de 420 minutos, ou 7 horas.
 
 ### 4.2. Unindo tabelas
 Esta etapa foi realizada para que alguns conjuntos de dados fossem unidos (inner join) possibilitando análises utilizando suas variáveis.
