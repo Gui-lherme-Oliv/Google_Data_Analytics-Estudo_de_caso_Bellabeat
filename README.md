@@ -412,26 +412,30 @@ ggplot(data=sonoDia_media, aes(x=dia_semana, y=sono_media,
 ![image](https://github.com/Gui-lherme-Oliv/Google_Data_Analytics-Estudo_de_caso_Bellabeat/assets/123426025/8ae6e84d-b6bc-442c-8a65-41e0c97f9229)
 
 A partir do gráfico acima pode-se identificar que os usuários passam em média mais de 80% do tempo diário em estado sedentário. A soma do tempo médio dos outros tipos corresponde a menos de 20% do tempo.
+**Recomendação:** O aplicativo da Bellabeat pode apresentar logo pela manhã um gráfico que mostra a divisão do tempo consumido em cada nível de atividade no dia anterior, para que o usuário tenha conhecimento e possa planejar seu dia de forma com que o tempo em atividade sedentária seja reduzido.
 
 ### 5.2.
 ![image](https://github.com/Gui-lherme-Oliv/Google_Data_Analytics-Estudo_de_caso_Bellabeat/assets/123426025/a6b2716e-09ad-44a4-b3c2-bb810ae364b2)
 
 A partir do gráfico acima pode-se identificar que uma correlação positiva entre o total de passos dados diariamente e o gasto calórico, ou seja, quanto mais passos mais calorias são consumidas.
+**Recomendação:** O aplicativo da Bellabeat pode oferecer a opção de definição de metas de passos diários e/ou calorias gastas e mostrar uma notificação quando atingi-la.
 
 ### 5.3.
 ![image](https://github.com/Gui-lherme-Oliv/Google_Data_Analytics-Estudo_de_caso_Bellabeat/assets/123426025/9a9b2cda-489b-47c0-9df6-b9a6b5596181)
 
-A partir do gráfico acima pode-se identificar que os maiores gastos calóricos médio acontecem na terça-feira e no sábado e os menores acontecem na quinta-feira e no domingo. Certamente ocorre mais gasto aos sábados devido ao fato de geralmente as pessoas terem mais tempo livre e praticarem mais atividades, e menos gasto ao domingo por utilizarem o dia para relaxar. De qualquer forma seria interessante obter mais dados para ter mais precisão, até pelo fato do comportamento dos dados nos outros dias da semana fugirem do senso comum, como exemplo do que ocorre na terça-feira e na quinta-feira.
+A partir do gráfico acima pode-se identificar que os maiores gastos calóricos médio acontecem na terça-feira e no sábado e os menores acontecem na quinta-feira e no domingo. Certamente ocorre mais gasto aos sábados devido ao fato de geralmente as pessoas terem mais tempo livre e praticarem mais atividades, e menos gasto ao domingo por utilizarem o dia para relaxar. De qualquer forma seria interessante obter mais dados para se ter maior precisão, até pelo fato do comportamento dos dados nos outros dias da semana fugirem do senso comum, como exemplo do que ocorre na terça-feira e na quinta-feira.
 
 ### 5.4.
 ![image](https://github.com/Gui-lherme-Oliv/Google_Data_Analytics-Estudo_de_caso_Bellabeat/assets/123426025/da01ff3c-a41f-466b-8e87-4dee7667fa0f)
 
 A partir do gráfico acima pode-se identificar que o maior valor registrado de gasto calórico aconteceu na quinta-feira e o menor valor aconteceu na sexta-feira.
+**Recomendação:** O aplicativo da Bellabeat pode apresentar um resumo diário e/ou semanal dos valores de gastos calóricos.
 
 ### 5.5.
 ![image](https://github.com/Gui-lherme-Oliv/Google_Data_Analytics-Estudo_de_caso_Bellabeat/assets/123426025/33e995ee-ef7f-42ef-a3f3-011729a16238)
 
-A partir do gráfico acima pode-se identificar que os usuários são mais ativos entre 05h e 22h, onde os maiores valores da intensidade toal média ocorrem entre 17:00h e 19:00h e os menores entre 02:00h e 04:00h. Falar das atividades após  trabalho
+A partir do gráfico acima pode-se identificar que os usuários são mais ativos entre 05h e 22h, onde os maiores valores da intensidade toal média ocorrem entre 17:00h e 19:00h e os menores entre 02:00h e 04:00h. Certamente o pico ocorre entre 17:00h e 19:00h por conta de alguma atividade após o trabalho, como fazer uma caminhada ou ir em uma academia.
+**Recomendação:** O aplicativo da Bellabeat pode apresentar um pouco antes desse horário uma notificação e/ou lembrete de motivação da prática de alguma atividade física.
 
 ### 5.6.
 ![image](https://github.com/Gui-lherme-Oliv/Google_Data_Analytics-Estudo_de_caso_Bellabeat/assets/123426025/66e61d17-e405-457a-993e-59a4b038c784)
@@ -455,6 +459,8 @@ A partir do gráfico acima pode-se identificar que o maiores tempos médio dormi
 
 ### 6. Ação
 - Primeiramente quão abrangentes são os dados para formar uma análise precisa?
+
+- Foi solicitado que você se concentre em um dos produtos da Bellabeat e analise dados de dispositivos inteligentes para obter informações sobre como os consumidores estão usando esses dispositivos. Os insights que você descobrir ajudarão a orientar a estratégia de marketing da empresa. Você apresentará sua análise à equipe executiva da Bellabeat juntamente com suas recomendações de alto nível para a estratégia de marketing da empresa.
 
 
 
