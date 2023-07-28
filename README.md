@@ -425,7 +425,7 @@ A partir do gráfico acima pode-se identificar que uma correlação positiva ent
 ### 5.3.
 ![image](https://github.com/Gui-lherme-Oliv/Google_Data_Analytics-Estudo_de_caso_Bellabeat/assets/123426025/9a9b2cda-489b-47c0-9df6-b9a6b5596181)
 
-A partir do gráfico acima pode-se identificar que os maiores gastos calóricos médio acontecem na terça-feira e no sábado e os menores acontecem na quinta-feira e no domingo. Certamente ocorre mais gasto aos sábados devido ao fato de geralmente as pessoas terem mais tempo livre e praticarem mais atividades físicas, e menos gasto ao domingo por utilizarem o dia para relaxar. De qualquer forma seria interessante obter mais dados para se ter maior precisão na análise, até pelo fato do comportamento dos dados nos outros dias da semana fugirem do senso comum, como exemplo do que ocorre na terça-feira e na quinta-feira.
+A partir do gráfico acima pode-se identificar que os maiores gastos calóricos médio acontecem na terça-feira e no sábado e os menores acontecem na quinta-feira e no domingo. Provavelmente ocorre mais gasto aos sábados devido ao fato de geralmente as pessoas terem mais tempo livre e praticarem mais atividades físicas, e menos gasto ao domingo por utilizarem o dia para relaxar. De qualquer forma seria interessante obter mais dados para se ter maior precisão na análise, até pelo fato do comportamento dos dados nos outros dias da semana fugirem do senso comum, como exemplo do que ocorre na terça-feira e na quinta-feira.
 
 ### 5.4.
 ![image](https://github.com/Gui-lherme-Oliv/Google_Data_Analytics-Estudo_de_caso_Bellabeat/assets/123426025/da01ff3c-a41f-466b-8e87-4dee7667fa0f)
@@ -437,7 +437,7 @@ A partir do gráfico acima pode-se identificar que o maior valor registrado de g
 ### 5.5.
 ![image](https://github.com/Gui-lherme-Oliv/Google_Data_Analytics-Estudo_de_caso_Bellabeat/assets/123426025/33e995ee-ef7f-42ef-a3f3-011729a16238)
 
-A partir do gráfico acima pode-se identificar que os usuários são mais ativos entre 05h e 22h, onde os maiores valores da intensidade toal média ocorrem entre 17:00h e 19:00h e os menores entre 02:00h e 04:00h. Certamente o pico ocorre entre 17:00h e 19:00h por conta de alguma atividade após o trabalho, como fazer uma caminhada ou ir em uma academia.
+A partir do gráfico acima pode-se identificar que os usuários são mais ativos entre 05h e 22h, onde os maiores valores da intensidade toal média ocorrem entre 17:00h e 19:00h e os menores entre 02:00h e 04:00h. Provavelmente o pico ocorre entre 17:00h e 19:00h por conta de alguma atividade após o trabalho, como fazer uma caminhada ou ir em uma academia.
 
 **Recomendação:** O aplicativo da Bellabeat pode apresentar um pouco antes desse horário uma notificação e/ou lembrete de motivação da prática de alguma atividade física.
 
@@ -472,7 +472,7 @@ A partir do gráfico acima pode-se identificar que o maiores tempos médio dormi
 - É importante destacar que o uso de mais dados é de extrema importância para melhorar a precisão das análises e para poder gerar mais insights.
 - Lembrar que a correlação entre alguns dados não significa causalidade.
 
-#### 6.2. Recomendações
+#### 6.2. Recomendações para a estratégia de marketing
 - O aplicativo da Bellabeat pode apresentar aos seus usuários estudos que evidenciem quais são os valores recomendados para se ter uma vida saudável, como o número mínimo de passos totais por dia, máximo de tempo em atividade sedentária, tempo mínimo dormindo, entre outros.
 - A Bellabeat pode oferecer um sistema de recompensa e ganho de pontos, onde incentiva os usuários a praticarem atividades físicas e onde eles ganham mais pontos nos dias que, de acordo com as análises, apresentam menores valores de intensidade total e/ou mais tempo em estado sedentário. Podem ser definidas diferentes metas, de acordo com o total de passos, calorias gastas ou alguma outra métrica, e os usuários que cumprirem as metas recebem descontos em planos de assinatura ou em produtos da Bellabeat.
 - A Bellabeat pode fechar parceria com marcas do gênero de estilo de vida saudável, como alimentos e academias, onde os pontos do sistema de recompensa possam ser utilizados para descontos em seus produtos e serviços.
