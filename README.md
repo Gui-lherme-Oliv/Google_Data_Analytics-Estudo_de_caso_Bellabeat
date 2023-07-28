@@ -471,6 +471,10 @@ A partir do gráfico acima pode-se identificar que o maiores tempos médio dormi
 #### 6.1. Considerações
 - Primeiramente quão abrangentes são os dados para formar uma análise precisa?
 - Lembre-se de que precisamos dar suporte a esses insights com mais dados, porque a correlação entre alguns dados não significa causalidade.
+- Obtenha mais dados para uma análise precisa
+- Campanha educativa de estilo saudável incentiva os usuários a fazerem exercícios ativos curtos durante a semana, mais longos nos finais de semana, principalmente no domingo onde vemos os passos mais baixos e os minutos mais sedentários.
+- A campanha educacional de estilo saudável pode ser combinada com um sistema de incentivo de premiação por pontos. Os usuários que concluírem o exercício de toda a semana receberão pontos Bellabeat em produtos/assinaturas.
+- O produto, como o rastreador de bem-estar Leaf, pode bater ou vibrar após um período prolongado de minutos sedentários, sinalizando ao usuário que é hora de ficar ativo! Da mesma forma, também pode lembrar ao usuário que é hora de dormir depois de sentir um tempo prolongado acordado na cama.
 
 #### 6.2. Recomendações
 
