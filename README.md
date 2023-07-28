@@ -222,8 +222,35 @@ caloriasHora$dia_semana <- factor(caloriasHora$dia_semana, levels= c("segunda-fe
 ## 4. Análise
 ### 4.1. Resumo das medidas estatísticas
 ```
+atividadeDia %>%
+  select(total_steps,
+         very_active_minutes,
+         fairly_active_minutes,
+         lightly_active_minutes,
+         sedentary_minutes,
+         calories) %>%
+  summary()
 
+caloriasHora %>%
+  select(calories) %>%
+  summary()
+
+intensidadeHora %>%
+  select(total_intensity,
+         average_intensity) %>%
+  summary()
+
+passosHora %>%
+  select(step_total) %>%
+  summary()
+
+sonoDia %>%
+  select(total_minutes_asleep,
+         total_time_in_bed) %>%
+  summary()
 ```
+Algumas descobertas interessantes deste resumo:
+-
 
 ### 4.2. Unindo tabelas
 Esta etapa foi realizada para que alguns conjuntos de dados fossem unidos (inner join) possibilitando análises utilizando suas variáveis.
