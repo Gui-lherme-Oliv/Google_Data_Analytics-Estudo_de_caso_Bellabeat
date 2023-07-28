@@ -469,16 +469,16 @@ A partir do gráfico acima pode-se identificar que o maiores tempos médio dormi
 
 ### 6. Ação
 #### 6.1. Considerações
-- Primeiramente quão abrangentes são os dados para formar uma análise precisa?
-- Lembre-se de que precisamos dar suporte a esses insights com mais dados, porque a correlação entre alguns dados não significa causalidade.
-- Obtenha mais dados para uma análise precisa
-- Campanha educativa de estilo saudável incentiva os usuários a fazerem exercícios ativos curtos durante a semana, mais longos nos finais de semana, principalmente no domingo onde vemos os passos mais baixos e os minutos mais sedentários.
-- A campanha educacional de estilo saudável pode ser combinada com um sistema de incentivo de premiação por pontos. Os usuários que concluírem o exercício de toda a semana receberão pontos Bellabeat em produtos/assinaturas.
-- O produto, como o rastreador de bem-estar Leaf, pode bater ou vibrar após um período prolongado de minutos sedentários, sinalizando ao usuário que é hora de ficar ativo! Da mesma forma, também pode lembrar ao usuário que é hora de dormir depois de sentir um tempo prolongado acordado na cama.
+- É importante destacar que o uso de mais dados é de extrema importância para melhorar a precisão das análises e para poder gerar mais insights.
+- Lembrar que a correlação entre alguns dados não significa causalidade.
 
 #### 6.2. Recomendações
-
-
+- O aplicativo da Bellabeat pode apresentar aos seus usuários estudos que evidenciem quais são os valores recomendados para se ter uma vida saudável, como o número mínimo de passos totais por dia, máximo de tempo em atividade sedentária, tempo mínimo dormindo, entre outros.
+- A Bellabeat pode oferecer um sistema de ganho de pontos, onde incentiva os usuários a praticarem atividades físicas e onde eles ganham mais pontos nos dias que, de acordo com as análises, apresentam menores valores de intensidade total e/ou mais tempo em estado sedentário. Podem ser definidas diferentes metas, de acordo com o total de passos, calorias gastas ou alguma métrica, e os usuários que cumprirem as metas recebem descontos em planos de assinatura.
+- Campanha educativa de estilo saudável incentiva os usuários a fazerem exercícios ativos curtos durante a semana, mais longos nos finais de semana, principalmente no domingo onde vemos os passos mais baixos e os minutos mais sedentários. A campanha educacional de estilo saudável pode ser combinada com um sistema de incentivo de premiação por pontos. Os usuários que concluírem o exercício de toda a semana receberão pontos Bellabeat em produtos/assinaturas.
+- O produto, como o rastreador de bem-estar Leaf, pode bater ou vibrar após um período prolongado de minutos sedentários, sinalizando ao usuário que é hora de ficar ativo! Da mesma forma, também pode lembrar ao usuário que é hora de dormir depois de sentir um tempo prolongado acordado na cama.
+- sistema de recompensa
+- recomendar coisas, apresentar estudos e benefícios
 
 
 
