@@ -431,7 +431,7 @@ A partir do gráfico acima pode-se identificar que o maior valor registrado de g
 ### 5.5.
 ![image](https://github.com/Gui-lherme-Oliv/Google_Data_Analytics-Estudo_de_caso_Bellabeat/assets/123426025/33e995ee-ef7f-42ef-a3f3-011729a16238)
 
-A partir do gráfico acima pode-se identificar que os maiores valores da intensidade toal média ocorrem entre 17:00h e 19:00h e os menores entre 02:00h e 04:00h.
+A partir do gráfico acima pode-se identificar que os usuários são mais ativos entre 05h e 22h, onde os maiores valores da intensidade toal média ocorrem entre 17:00h e 19:00h e os menores entre 02:00h e 04:00h. Falar das atividades após  trabalho
 
 ### 5.6.
 ![image](https://github.com/Gui-lherme-Oliv/Google_Data_Analytics-Estudo_de_caso_Bellabeat/assets/123426025/66e61d17-e405-457a-993e-59a4b038c784)
@@ -446,14 +446,14 @@ A partir do gráfico acima pode-se identificar que os maiores tempos médio em e
 ### 5.8.
 ![image](https://github.com/Gui-lherme-Oliv/Google_Data_Analytics-Estudo_de_caso_Bellabeat/assets/123426025/6b46d0f8-4ce3-4f0d-a0de-c50b59ec39bc)
 
-A partir do gráfico acima pode-se identificar que
+A partir do gráfico acima pode-se identificar que ,, reduzir o tempo sedentário.
 
 ### 5.9.
 ![image](https://github.com/Gui-lherme-Oliv/Google_Data_Analytics-Estudo_de_caso_Bellabeat/assets/123426025/fa949e57-6285-4f88-b98a-966bfc810763)
 
 A partir do gráfico acima pode-se identificar que o maiores tempos médio dormindo ocorrem na quarta-feira e no domingo e os menores na terça-feira e na quinta-feira.
 
-### 5.10. Conclusões
+### 6. Ação
 - Primeiramente quão abrangentes são os dados para formar uma análise precisa?
 
 
