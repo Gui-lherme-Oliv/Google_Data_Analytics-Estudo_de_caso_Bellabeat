@@ -465,7 +465,7 @@ A partir do gráfico acima pode-se identificar que existe uma correlação negat
 
 A partir do gráfico acima pode-se identificar que o maiores tempos médio dormindo ocorrem na quarta-feira e no domingo e os menores na terça-feira e na quinta-feira.
 
-**Recomendação:** O aplicativo da Bellabeat pode oferecer a opção de definir notificações de acordo com o horário, para que tempo médio dormindo seja consistente durante toda a semana. Também pode lembrar ao usuário que é hora de dormir depois de sentir um tempo prolongado acordado na cama
+**Recomendação:** O aplicativo da Bellabeat pode oferecer a opção de definir notificações de acordo com o horário, para que tempo médio dormindo seja consistente durante toda a semana.
 
 ### 6. Ação
 #### 6.1. Considerações
@@ -476,10 +476,8 @@ A partir do gráfico acima pode-se identificar que o maiores tempos médio dormi
 - O aplicativo da Bellabeat pode apresentar aos seus usuários estudos que evidenciem quais são os valores recomendados para se ter uma vida saudável, como o número mínimo de passos totais por dia, máximo de tempo em atividade sedentária, tempo mínimo dormindo, entre outros.
 - A Bellabeat pode oferecer um sistema de recompensa e ganho de pontos, onde incentiva os usuários a praticarem atividades físicas e onde eles ganham mais pontos nos dias que, de acordo com as análises, apresentam menores valores de intensidade total e/ou mais tempo em estado sedentário. Podem ser definidas diferentes metas, de acordo com o total de passos, calorias gastas ou alguma outra métrica, e os usuários que cumprirem as metas recebem descontos em planos de assinatura ou em produtos da Bellabeat.
 - A Bellabeat pode fechar parceria com marcas do gênero de estilo de vida saudável, como alimentos e academias, onde os pontos do sistema de recompensa possam ser utilizados para descontos em seus produtos e serviços.
+- O produtos Leaf e Time podem vibrar após identificarem um período prolongado em estado sedentários, além de também poderem sinalizar que é hora de dormir depois de identificar um tempo prolongado acordado na cama.
 
-- O produto, como o rastreador de bem-estar Leaf, pode bater ou vibrar após um período prolongado de minutos sedentários, sinalizando ao usuário que é hora de ficar ativo! Da mesma forma, também pode lembrar ao usuário que é hora de dormir depois de sentir um tempo prolongado acordado na cama.
-- sistema de recompensa
-- recomendar coisas, apresentar estudos e benefícios
 
 
 
