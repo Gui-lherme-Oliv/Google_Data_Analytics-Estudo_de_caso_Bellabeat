@@ -220,12 +220,12 @@ caloriasHora$dia_semana <- factor(caloriasHora$dia_semana, levels= c("segunda-fe
 ```
 
 ## 4. Análise
-### 4.2. Resumo das medidas estatísticas
+### 4.1. Resumo das medidas estatísticas
 ```
 
 ```
 
-### 4.1. Unindo tabelas
+### 4.2. Unindo tabelas
 Esta etapa foi realizada para que alguns conjuntos de dados fossem unidos (inner join) possibilitando análises utilizando suas variáveis.
 ```
 diario_atividade_sono <- merge(atividadeDia, sonoDia, by=c("id","data"))
@@ -234,7 +234,7 @@ horario_calorias_intensidade_passos <- merge(horario_calorias_intensidade_passos
 ```
 **Observação:** O inner join funciona como uma interseção entre duas tabelas, retorna os valores em comum de ambas as tabelas, de acordo com uma condição dada. Como o conjunto de dados _sonoDia_ possui menos observações que o conjunto _atividadeDia_ logo o conjunto gerado _diario_atividade_sono_ terá menos observações que _atividadeDia_. Quando não for necessário utilizar esses dois conjuntos de dados gerados, serão utilizados os conjuntos processados anteriormente.
 
-### 4.2. Porcentagem da Média do tempo consumido diariamente em cada nível de atividade
+### 4.3. Porcentagem da Média do tempo consumido diariamente em cada nível de atividade
 ```
 ativDia_media <- atividadeDia %>%
   summarise(mean(very_active_minutes), mean(fairly_active_minutes), 
@@ -254,7 +254,7 @@ plot_ly(ativPorcent, labels = ~legenda, values = ~valores, type = 'pie',textposi
          yaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE))
 ```
 
-### 4.3. Relação entre o Total de Passos e o Gasto Calórico por dia
+### 4.4. Relação entre o Total de Passos e o Gasto Calórico por dia
 ```
 #plotagem
 ggplot(data=atividadeDia, aes(x=calories, y=total_steps)) + 
@@ -262,7 +262,7 @@ ggplot(data=atividadeDia, aes(x=calories, y=total_steps)) +
   labs(title="Relação entre o Total de Passos e o Gasto Calórico por dia",x="Calorias gastas", y="Número de passos")
 ```
 
-### 4.4. Variação do Gasto Calórico (médio e máximo) durante a semana
+### 4.5. Variação do Gasto Calórico (médio e máximo) durante a semana
 ```
 #médio
 caloriasDia_media <- atividadeDia %>% 
@@ -291,7 +291,7 @@ ggplot(data=caloriasDia_max, aes(x=dia_semana, y=calorias_max,
   labs(title="Gasto Calórico Máximo durante a semana", x="Dia da semana", y="Calorias gastas")
 ```
 
-### 4.5. Variação da Média da Intensidade Total de acordo com o horário
+### 4.6. Variação da Média da Intensidade Total de acordo com o horário
 ```
 intensidadeHora_media <- intensidadeHora %>%
   group_by(hora) %>%
@@ -304,7 +304,7 @@ ggplot(data=intensidadeHora_media, aes(x=hora, y=intensidade_total_media)) +
   labs(title="Variação da Média da Intensidade Total de acordo com o horário", x="Horário", y="Média da intensidade total")
 ```
 
-### 4.6. Variação da Média de Calorias Gastas de acordo com o horário
+### 4.7. Variação da Média de Calorias Gastas de acordo com o horário
 ```
 caloriasHora_media <- caloriasHora %>% 
   group_by(hora) %>% 
@@ -317,7 +317,7 @@ ggplot(data=caloriasHora_media, aes(x=hora, y=calorias_media)) +
   labs(title="Variação da Média de Calorias Gastas de acordo com o horário", x="Horário", y="Média de calorias gastas")
 ```
 
-### 4.7. Variação do Tempo Médio em Estado Sedentário durante a semana 
+### 4.8. Variação do Tempo Médio em Estado Sedentário durante a semana 
 ```
 sedentarioDia_media <- atividadeDia %>% 
   group_by(dia_semana) %>% 
@@ -332,7 +332,7 @@ ggplot(data=sedentarioDia_media, aes(x=dia_semana, y=sedentario_media,
   labs(title="Variação do Tempo Médio em Estado Sedentário durante a semana", x="Dia da semana", y="Tempo em estado sedentário (min)")
 ```
 
-### 4.8. Relação entre Tempo Dormindo e Tempo em cada Nível de Atividade
+### 4.9. Relação entre Tempo Dormindo e Tempo em cada Nível de Atividade
 ```
 #verificando valores máximo e mínimo para os limites do gráfico
 summary(diario_atividade_sono)
@@ -362,7 +362,7 @@ ggplot(data=diario_atividade_sono) +
   labs(title="Relação entre Tempo Dormindo e Tempo em cada Nível de Atividade", x="Tempo dormindo (min)", y="Tempo de atividade (min)")
 ```
 
-### 4.9. Variação do Tempo Médio Dormindo durante a semana
+### 4.10. Variação do Tempo Médio Dormindo durante a semana
 ```
 sonoDia_media <- diario_atividade_sono %>% 
   group_by(dia_semana) %>% 
