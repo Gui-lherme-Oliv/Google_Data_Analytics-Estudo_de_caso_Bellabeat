@@ -421,7 +421,7 @@ A partir do gráfico acima pode-se identificar que uma correlação positiva ent
 ### 5.3.
 ![image](https://github.com/Gui-lherme-Oliv/Google_Data_Analytics-Estudo_de_caso_Bellabeat/assets/123426025/9a9b2cda-489b-47c0-9df6-b9a6b5596181)
 
-A partir do gráfico acima pode-se identificar que os maiores gastos calóricos médio acontecem na terça-feira e no sábado e os menores acontecem na quinta-feira e no domingo.
+A partir do gráfico acima pode-se identificar que os maiores gastos calóricos médio acontecem na terça-feira e no sábado e os menores acontecem na quinta-feira e no domingo. Certamente ocorre mais gasto aos sábados devido ao fato de geralmente as pessoas terem mais tempo livre e praticarem mais atividades, e menos gasto ao domingo por utilizarem o dia para relaxar. De qualquer forma seria interessante obter mais dados para ter mais precisão, até pelo fato do comportamento dos dados nos outros dias da semana fugirem do senso comum, como exemplo do que ocorre na terça-feira e na quinta-feira.
 
 ### 5.4.
 ![image](https://github.com/Gui-lherme-Oliv/Google_Data_Analytics-Estudo_de_caso_Bellabeat/assets/123426025/da01ff3c-a41f-466b-8e87-4dee7667fa0f)
