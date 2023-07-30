@@ -470,12 +470,12 @@ A partir do gráfico acima pode-se identificar que o maiores tempos médio dormi
 ## 6. Ação
 ### 6.1. Considerações
 - É importante destacar que o uso de mais dados é de extrema importância para melhorar a precisão das análises e para poder gerar mais insights.
-- Lembrar que a correlação entre alguns dados não significa causalidade.
+- Lembrar que a correlação entre alguns dados não significa necessariamente causalidade.
 
 ### 6.2. Recomendações para a estratégia de marketing
 - O aplicativo da Bellabeat pode apresentar aos seus usuários estudos que evidenciem quais são os valores recomendados para se ter uma vida saudável, como o número mínimo de passos totais por dia, máximo de tempo em atividade sedentária, tempo mínimo dormindo, entre outros.
 - A Bellabeat pode oferecer um sistema de recompensa e ganho de pontos, onde incentiva os usuários a praticarem atividades físicas e onde eles ganham mais pontos nos dias que, de acordo com as análises, apresentam menores valores de intensidade total e/ou mais tempo em estado sedentário. Podem ser definidas diferentes metas, de acordo com o total de passos, calorias gastas ou alguma outra métrica, e os usuários que cumprirem as metas recebem descontos em planos de assinatura ou em produtos da Bellabeat.
-- A Bellabeat pode fechar parceria com marcas do gênero de estilo de vida saudável, como alimentos e academias, onde os pontos do sistema de recompensa possam ser utilizados para descontos em seus produtos e serviços.
+- A Bellabeat pode fechar parceria com marcas com foco em estilo de vida saudável, como alimentos e academias, onde os pontos do sistema de recompensa possam ser utilizados para descontos em seus produtos e serviços.
 - O produtos Leaf e Time podem vibrar após identificarem um período prolongado em estado sedentários, além de também poderem sinalizar que é hora de dormir depois de identificar um tempo prolongado acordado na cama.
 
 
