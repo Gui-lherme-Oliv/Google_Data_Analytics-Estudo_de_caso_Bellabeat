@@ -1,3 +1,5 @@
+<div align="justify">
+
 # ESTUDO DE CASO: Como uma empresa de tecnologia de bem-estar pode agir com inteligência?
 #### Autor: Guilherme Oliveira da Rocha Cunha
 
@@ -476,7 +478,7 @@ A partir do gráfico acima pode-se identificar que o maiores tempos médio dormi
 - A Bellabeat pode fechar parceria com marcas com foco em estilo de vida saudável, como alimentos e academias, onde os pontos do sistema de recompensa possam ser utilizados para descontos em seus produtos e serviços.
 - O produtos Leaf e Time podem vibrar após identificarem um período prolongado em estado sedentários, além de também poderem sinalizar que é hora de dormir depois de identificar um tempo prolongado acordado na cama.
 
-
+</div>
 
 
 
